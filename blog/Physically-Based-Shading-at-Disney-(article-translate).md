@@ -380,9 +380,9 @@ $$F_{\text{Schlick}} = F_0 + (1 − F_0)(1 − cos θ_d)^5$$
 
 ## Дополнения
 
-### Дополнение A. [Избранная-история-моделей-BRDF](./PBS-Disney/A-Избранная-история-моделей-BRDF.md)
+### Дополнение A. [Избранная история моделей BRDF](./PBS-Disney/A-Избранная-история-моделей-BRDF.md)
 
-### Дополнение Б. [GTR-MicrofacetDistribution](./PBS-Disney/B-GTR-MicrofacetDistribution.md)
+### Дополнение Б. [GTR Microfacet Distribution](./PBS-Disney/B-GTR-MicrofacetDistribution.md)
 
 ## [Использованная литература](./PBS-Disney/Использованная-литература.md)
 
