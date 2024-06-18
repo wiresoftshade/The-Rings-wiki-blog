@@ -6,7 +6,7 @@
 
 - Smith 1967 [29] derived a shadowing function from the microfacet distribution. Notably, this shadowing function varied with surface roughness.
 
-- Phong 1975 [25] proposed a computationally simple model of a specular highlight using an ex- ponentiated cosine.
+- Phong 1975 [25] proposed a computationally simple model of a specular highlight using an ex-ponentiated cosine.
 
 - Trowbridge and Reitz 1975 [31] derived a new microfacet distribution based on average surface irregularity of curved microsurfaces derived from an ellipsoid of revolution. They fit their model to measured data for rough glass and compared their results with Gaussian, Beckmann, Sirohi, and Berry distributions.
 
