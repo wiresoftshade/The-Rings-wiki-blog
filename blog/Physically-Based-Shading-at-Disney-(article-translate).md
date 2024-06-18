@@ -21,4 +21,8 @@ B. [GTR-MicrofacetDistribution](Physically-Based-Shading-at-Disney-(article-tran
 
 [Использованная-литература](Physically-Based-Shading-at-Disney-(article-translate)/Использованная-литература.md)
 
-[История-изменений](Physically-Based-Shading-at-Disney-(article-translate)/История-изменений.md)
+### История изменений
+
+Версия 2 (31 августа 2012 г.): исправлен коэффициент нормализации в уравнении 4.
+
+Версия 3 (12 августа 2014 г.): исправлено форматирование для уравнений 10–13; добавлены дополнения.
