@@ -18,5 +18,7 @@ wiki/blog of The Ring project
 [Штриховка в реальном времени](blog/Real-Time-Hatching-(article-translate).md)
 перевод статьи
 
- [А. Рой Движение по орбитам](blog/А.Рой-Движение-по-орбитам.md)
+[А. Рой Движение по орбитам](blog/А.Рой-Движение-по-орбитам.md)
 Выписки из книги
+
+[LATEX Mathematical Symbols ](/blog/LaTeXmath_notes.md)
