@@ -50,9 +50,9 @@ $\vec{a}\qquad$`\vec{a}`
 
 ## 12 Text Style
 
-Monospace font: $\mathtt{ABCDEFabcdef123456}\qquad$`\mathtt{ABCDEF~abcdef~123456}`
+Monospace font: $\mathtt{ABCDEFabcdef123456}\qquad$`\mathtt{ABCDEFabcdef123456}`
 
-Bold font (use for Vectors): $\mathbf{ABCDEFabcdef123456}\qquad$`\mathbf{ABCDEF~abcdef~123456}`
+Bold font (use for Vectors): $\mathbf{ABCDEFabcdef123456}\qquad$`\mathbf{ABCDEFabcdef123456}`
 
 # Специальная команда указания пробела
 
