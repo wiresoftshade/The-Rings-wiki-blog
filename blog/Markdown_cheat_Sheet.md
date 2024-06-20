@@ -16,16 +16,9 @@ Styling
 
 **Strong** __strong__
 
-==Marked text.==
-
 ~~Mistaken text.~~
 
 > Quoted text.
-
-H~2~O is a liquid.
-
-2^10^ is 1024.
-
 
 
 Lists
@@ -60,17 +53,19 @@ Code
 
 Some `inline code`.
 
+    // A code block by tabs
+    var foo = 'bar';
+
+
 ```
 // A code block
 var foo = 'bar';
 ```
 
 ```javascript
-// An highlighted block
+// An javascript highlighted block
 var foo = 'bar';
 ```
-
-
 
 Tables
 ---------------------------
@@ -87,36 +82,12 @@ Pipe     | $1
 | centered | right-aligned |
 
 
-
-Definition lists
----------------------------
-
-Markdown
-:  Text-to-HTML conversion tool
-
-Authors
-:  John
-:  Luke
-
-
-
 Footnotes
 ---------------------------
 
 Some text with a footnote.[^1]
 
 [^1]: The footnote.
-
-
-
-Abbreviations
----------------------------
-
-Markdown converts text to HTML.
-
-*[HTML]: HyperText Markup Language
-
-
 
 LaTeX math
 ---------------------------

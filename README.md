@@ -22,4 +22,5 @@ wiki/blog of The Ring project
 Выписки из книги
 
 [LATEX Mathematical Symbols ](/blog/LaTeXmath_notes.md)
+
 [Markdown cheat Sheet](/blog/Markdown_cheat_Sheet.md)
