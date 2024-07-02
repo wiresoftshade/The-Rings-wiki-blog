@@ -1,8 +1,10 @@
 ## Б Распределение микрограней GTR
-**<font color=#00FF00>B GTR Microfacet Distribution</font>**
+
+**<font color=gray>B GTR Microfacet Distribution</font>**
 
 ### Б.1 Обзор распределения микрограней
-**<font color=red>B.1 Microfacet distribution review</font>**
+
+**<font color=gray>B.1 Microfacet distribution review</font>**
 
 Правдоподобное распределение микрограней должно быть нормализовано по полусфере таким образом, чтобы проецируемая площадь микрограней была равна 1 [33]:
 
@@ -42,11 +44,55 @@ $$x=cdf^{-1}(\xi)$$
 
 Учитывая две функции выборки и равномерные случайные величины $\xi_1$ и $\xi_2$, $\theta_h$ и $\phi_h$ можно вычислить и спроецировать в систему координат вокруг нормали $\mathbf{n}$, касательной $\mathbf{x}$ и бикасательной $\mathbf{y}$ для формирования половины вектора $\mathbf{h}$. Наконец, если задан вектор $\mathbf{v}$, $\mathbf{l}$ можно вычислить, отразив $\mathbf{h}$ относительно $\mathbf{v}$: 
 
+<font color=gray>Given the two sampling functions and uniform random variables $\xi_1$ and $\xi_2$, $\theta_h$ and $\phi_h$ can be computed and projected to the coordinate frame around the normal $\mathbf{n}$, tangent $\mathbf{x}$, and bitangent $\mathbf{y}$ to form the half vector $\mathbf{h}$. Finally, given a $\mathbf{v}$ vector, $\mathbf{l}$ can be computed by reflecting $\mathbf{h}$ across $\mathbf{v}$:</font>
+
 $$\mathbf{h}=sin\theta_hcos\phi_h\mathbf{x}+sin\theta_hsin\phi_h\mathbf{y}+cos\theta_h\mathbf{n}$$
 
 $$\mathbf{l}=2(\mathbf{v}\cdot\mathbf{h})\mathbf{h}−\mathbf{v}$$
 
-<font color=gray>Given the two sampling functions and uniform random variables $\xi_1$ and $\xi_2$, $\theta_h$ and $\phi_h$ can be computed and projected to the coordinate frame around the normal $\mathbf{n}$, tangent $\mathbf{x}$, and bitangent $\mathbf{y}$ to form the half vector $\mathbf{h}$. Finally, given a $\mathbf{v}$ vector, $\mathbf{l}$ can be computed by reflecting $\mathbf{h}$ across $\mathbf{v}$:</font>
-
 ### Б.2 GTR
-##### <font color=gray>B.2 GTR</font>
+**<font color=gray>B.2 GTR</font>**
+
+После приведенных выше выводов нормализованные уравнения распределения GTR и выборки имеют вид:
+
+<font color=gray>Following the above derivations, the normalized GTR distribution and sampling equations are:</font>
+
+$$
+D_{GTR}(\theta_h)=\frac{(\gamma-1)(\alpha^2-1)}{\pi(1-(\alpha^2)^{1-\gamma})}\frac{1}{(1+(\alpha^2-1)\cos^2\theta_h)^\gamma}\qquad(1)
+$$
+$$
+\phi_h=2\pi\xi_1\qquad(2)
+$$
+$$ 
+\cos\theta_h=\sqrt{\frac{1-[(\alpha^2)^{1-\gamma}(1-\xi_2)+\xi_2]^{\frac{1}{1-\gamma}}}{1-\alpha^2}}\qquad(3)
+$$
+
+Это распределение справедливо для любого $\gamma>0$, однако при $\gamma=1$ возникает сингулярность. Принимая предел как $\gamma\longrightarrow1$, получаем эту альтернативную форму:
+
+<font color=gray>This distribution is valid for any $\gamma>0$, however, at $\gamma=1$ there is a singularity. Taking the limit as $\gamma\longrightarrow1$ produces this alternate form:</font>
+
+$$
+D_{GTR_1}(\theta_h)=\frac{\alpha^2-1}{\pi\log\alpha^2}\frac{1}{(1+(\alpha^2-1)\cos^2\theta_h)}\qquad(4)
+$$
+$$
+\cos\theta_h=\sqrt{\frac{1-(\alpha^2)^{1-\xi_2}}{1-\alpha^2}}\qquad(5)
+$$
+
+Значения $\gamma=3/2$ и $\gamma=2$ имеют упрощенные формы, причем последнее эквивалентно GTX:
+
+<font color=gray>The values of $\gamma=3/2$ and $\gamma=2$ have simplified forms, the latter being equivalent to GGX:</font>
+
+
+$$
+D_{GTR_{3/2}}(\theta_h)=\frac{\alpha^2+\alpha}{2\pi}\frac{1}{(1+(\alpha^2-1)\cos^2\theta_h)^{3/2}}\qquad(6)
+$$
+$$
+\cos\theta_h=\sqrt{\frac{1}{1-\alpha^2}\bigg(1-\frac{\alpha^2}{(1+(\alpha-1)\xi_2)^2}\bigg)}\qquad(7)
+$$
+
+$$
+D_{GTR_2}(\theta_h)=\frac{\alpha^2}{\pi}\frac{1}{(1+(\alpha^2-1)\cos^2\theta_h)^2}\qquad(8)
+$$
+$$
+\cos\theta_h=\sqrt{\frac{1-\xi_2}{1+(\alpha^2-1)\xi_2}}\qquad(9)
+$$

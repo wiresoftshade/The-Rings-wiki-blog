@@ -54,7 +54,7 @@ Monospace font: $\mathtt{ABCDEFabcdef123456}\qquad$`\mathtt{ABCDEFabcdef123456}`
 
 Bold font (use for Vectors): $\mathbf{ABCDEFabcdef123456}\qquad$`\mathbf{ABCDEFabcdef123456}`
 
-# Специальная команда указания пробела
+## Специальная команда указания пробела
 
 `\quad` - это пробел, равный текущему размеру шрифта. Так, если вы используете шрифт размером 11pt, то пространство, предоставляемое `\quad`, также будет равно 11pt (по горизонтали, конечно). `\qquad` дает вдвое больше.
 
@@ -67,3 +67,30 @@ Bold font (use for Vectors): $\mathbf{ABCDEFabcdef123456}\qquad$`\mathbf{ABCDEFa
 `\;`	large space	    5/18 of a quad
 
 `\!`	negative space	-3/18 of a quad
+
+
+## 13 Позволяет делать выравнивания по блокам. Создается некий Array
+
+Начитается с `\begin{array}` заканчивается `\end{array}`. Внутри колонки делятся знаком `&`, строки делятся `\\`. Вначале можно добавить еще указания к выравниванию. Например: `{lcr}`. `l`По левому, `r`по правому краям, `c`по центру.
+
+```tex
+$$ 
+\begin{array}{lcr}
+D_a&=&300\\
+D_{Booom!}&=&2000000\\
+D_c&=&100
+\end{array} 
+$$
+```
+
+И получается следующее:
+
+$$ 
+\begin{array}{lcr}
+D_a&=&300\\
+D_{Booom!}&=&2000000\\
+D_c&=&100
+\end{array} 
+$$
+
+
