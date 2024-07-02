@@ -60,9 +60,11 @@ $$\mathbf{l}=2(\mathbf{v}\cdot\mathbf{h})\mathbf{h}−\mathbf{v}$$
 $$
 D_{GTR}(\theta_h)=\frac{(\gamma-1)(\alpha^2-1)}{\pi(1-(\alpha^2)^{1-\gamma})}\frac{1}{(1+(\alpha^2-1)\cos^2\theta_h)^\gamma}\qquad(1)
 $$
+
 $$
 \phi_h=2\pi\xi_1\qquad(2)
 $$
+
 $$ 
 \cos\theta_h=\sqrt{\frac{1-[(\alpha^2)^{1-\gamma}(1-\xi_2)+\xi_2]^{\frac{1}{1-\gamma}}}{1-\alpha^2}}\qquad(3)
 $$
@@ -74,6 +76,7 @@ $$
 $$
 D_{GTR_1}(\theta_h)=\frac{\alpha^2-1}{\pi\log\alpha^2}\frac{1}{(1+(\alpha^2-1)\cos^2\theta_h)}\qquad(4)
 $$
+
 $$
 \cos\theta_h=\sqrt{\frac{1-(\alpha^2)^{1-\xi_2}}{1-\alpha^2}}\qquad(5)
 $$
@@ -86,6 +89,7 @@ $$
 $$
 D_{GTR_{3/2}}(\theta_h)=\frac{\alpha^2+\alpha}{2\pi}\frac{1}{(1+(\alpha^2-1)\cos^2\theta_h)^{3/2}}\qquad(6)
 $$
+
 $$
 \cos\theta_h=\sqrt{\frac{1}{1-\alpha^2}\bigg(1-\frac{\alpha^2}{(1+(\alpha-1)\xi_2)^2}\bigg)}\qquad(7)
 $$
@@ -93,6 +97,7 @@ $$
 $$
 D_{GTR_2}(\theta_h)=\frac{\alpha^2}{\pi}\frac{1}{(1+(\alpha^2-1)\cos^2\theta_h)^2}\qquad(8)
 $$
+
 $$
 \cos\theta_h=\sqrt{\frac{1-\xi_2}{1+(\alpha^2-1)\xi_2}}\qquad(9)
 $$
