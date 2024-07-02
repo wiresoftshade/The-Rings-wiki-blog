@@ -1,8 +1,8 @@
 ## Б Распределение микрограней GTR
-#### <font color=gray>B GTR Microfacet Distribution</font>
+**<font color=#00FF00>B GTR Microfacet Distribution</font>**
 
 ### Б.1 Обзор распределения микрограней
-#### <font color=gray>B.1 Microfacet distribution review</font>
+**<font color=red>B.1 Microfacet distribution review</font>**
 
 Правдоподобное распределение микрограней должно быть нормализовано по полусфере таким образом, чтобы проецируемая площадь микрограней была равна 1 [33]:
 
