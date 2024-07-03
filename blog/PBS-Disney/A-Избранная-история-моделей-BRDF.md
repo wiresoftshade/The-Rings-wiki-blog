@@ -1,12 +1,12 @@
 ## А Избранная история моделей BRDF, используемых в графике
 
-- Бекманн 1963 [5] предложил модель рассеяния от шероховатых поверхностей, основанную на гауссовом распределении уклонов поверхности. 
+- **Бекманн 1963** [5] предложил модель рассеяния от шероховатых поверхностей, основанную на гауссовом распределении уклонов поверхности. 
     
-    > **Beckmann 1963** *provided a model for scattering from rough surfaces based on a Gaussian distribution of surface slopes.*
+    > *Beckmann 1963 provided a model for scattering from rough surfaces based on a Gaussian distribution of surface slopes.*
 
-- Торранс и Спарроу 1967 [30] представили модель микрограней. Было принято гауссовское распределение углов микрограней, а фактор затенения микрограней был выведен из упрощающих геометрических предположений.
+- **Торранс и Спарроу 1967** [30] представили модель микрограней. Было принято гауссовское распределение углов микрограней, а фактор затенения микрограней был выведен из упрощающих геометрических предположений.
     
-    > **Torrance and Sparrow 1967** *introduced the microfacet model. A Gaussian distribution of microfacet angles was assumed and a microfacet shadowing factor was derived from simplifying geometric assumptions.*
+    > *Torrance and Sparrow 1967 introduced the microfacet model. A Gaussian distribution of microfacet angles was assumed and a microfacet shadowing factor was derived from simplifying geometric assumptions.*
 
 - Смит 1967 [29] вывел функцию затенения из распределения микрограней. Примечательно, что эта функция затенения менялась в зависимости от шероховатости поверхности.
   
