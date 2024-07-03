@@ -378,13 +378,391 @@ $$F_{\text{Schlick}} = F_0 + (1 − F_0)(1 − \cos θ_d)^5$$
 
 Прежде всего, я хотел бы поблагодарить Чака Таппана, который был соавтором нашей новой параметризации материалов и отстаивал наш новый конвейер разработки внешнего вида. Я также хотел бы поблагодарить Кристиана Эйзенахера за его работу над Material Designer, а также Грега Николса и Джареда Джонсона за их работу над Disney BRDF Viewer. И я хотел бы поблагодарить команду Ralph Look and Lighting за их терпение и поддержку. Наконец, я хотел бы поблагодарить Стивена Хилла, Нати Хоффмана и Пита Ширли за их ценный вклад, а Стивена в частности за предложение проецируемой половинной векторной формулировки в уравнении (14) в Приложении Б.
 
-## [Использованная литература](./PBS-Disney/Использованная-литература.md)
+## Использованная литература
 
-## Дополнение A. [Избранная история моделей BRDF](./PBS-Disney/A-Избранная-история-моделей-BRDF.md)
+[1] Michael Ashikhmin. Distribution-based brdfs. Technical report, 2007.
 
-## Дополнение Б. [Распределение микрограней GTR](./PBS-Disney/B-GTR-MicrofacetDistribution.md)
+[2] Michael Ashikhmin, Simon Prem˘oze, and Peter Shirley.  A Microfacet-Based BRDF generator.  In Sheila Hoffmeyer, editor, Proceedings of the Computer Graphics Conference 2000 (SIGGRAPH- 00), pages 65–74, New York, July 23–28 2000. ACMPress.
 
-## История изменений
+[3] Michael Ashikhmin and Peter Shirley. An anisotropic Phong BRDF model. Journal of Graphics Tools: JGT, 5(2):25–32, 2000.
+
+[4] M. M. Bagher, C. Soler, and N. Holzschuch. Accurate fitting of measured reflectances using a shifted gamma micro-facet distribution. Computer Graphics Forum, 31(4):1509–1518, 2012.
+
+[5] P. Beckmann and A. Spizzichino. The scattering of electromagnetic waves from rough surfaces. MacMillan, 1963.
+
+[6] James F. Blinn. Models of light reflection for computer synthesized pictures. volume 11, pages 192–198, July 1977.
+
+[7] R. L. Cook and K. E. Torrance. A reflectance model for computer graphics. Computer Graphics, 15(3):307–316, 1981.
+
+[8] Arne Du¨r.  An improved normalization for the Ward reflectance model.  Journal  of  graphics,  gpu, and game tools, 11(1):51–59, 2006.
+
+[9] Dave Edwards, Solomon Boulos, Jared Johnson, Peter Shirley, Michael Ashikhmin, Michael Stark, and Chris Wyman. The halfway vector disk for brdf modeling. ACM Trans. Graph., 25(1):1–18, January 2006.
+
+[10] David Geisler-Moroder and Arne Du¨r.  A new Ward BRDF model with bounded albedo.  Comput. Graph. Forum, 29(4):1391–1398, 2010.
+
+[11] Pat Hanrahan and Wolfgang Krueger. Reflection from layered surfaces due to subsurface scatter- ing. In Proceedings of the 20th annual conference on Computer graphics and interactive techniques, SIGGRAPH ’93, pages 165–174, New York, NY, USA, 1993. ACM.
+
+[12] Xiao D. He, Kenneth E. Torrance, Francois X. Sillion, and Donald P. Greenberg. A Comprehensive Physical Model for Light Reflection. In Computer Graphics (ACM SIGGRAPH ’91 Proceedings), volume 25, pages 175–186, July 1991.
+
+[13] Csaba  Kelemen,  Laszlo  Szirmay-Kalos,  and  L´aszl´o  Szirmay-kalos.   A  microfacet  based  coupled specular-matte brdf model with importance sampling. Eurographics Short Presentations, 2001.
+
+[14] Murat Kurt, L´aszl´o Szirmay-Kalos, and Jaroslav Kˇriv´anek.  An anisotropic brdf model for fitting and monte carlo rendering. SIGGRAPH Comput. Graph., 44(1):3:1–3:15, February 2010.
+
+[15] Eric P. Lafortune, Sing-Choong Foo, Kenneth E. Torrance, and Donald P. Greenberg.  Non- linear approximation of reflectance functions. In Computer Graphics (ACM SIGGRAPH ’97 Proceedings), volume 31, pages 117–126, 1997.
+
+[16] Robert R. Lewis. Making Shaders More Physically Plausible. In Fourth Eurographics Workshop on Rendering, number Series EG 93 RW, pages 47–62, Paris, France, June 1993.
+
+[17] Joakim L¨ow, Joel Kronander, Anders Ynnerman, and Jonas Unger.  Brdf models for accurate and efficient rendering of glossy surfaces. ACM Trans. Graph., 31(1):9:1–9:14, February 2012.
+
+[18] Wojciech Matusik, Hanspeter Pfister, Matt Brand, and Leonard McMillan. A data-driven re- flectance model. ACM Transactions on Graphics, 22(3):759–769, July 2003.
+
+[19] L´aszl´o Neumann, Attila Neumann, and L´aszl´o Szirmay-Kalos.  Compact metallic reflectance mod- els. Computer Graphics Forum, 18(3):161–172, September 1999. ISSN 1067-7055.
+
+[20] L´aszl´o  Neumann,  Attila  Neumann,  and  L´aszl´o  Szirmay-Kalos.   Reflectance  models  by  pumping up the albedo function. In Machine Graphics and Vision, pages 3–18, 1999.
+
+[21] Addy  Ngan,  Fr´edo  Durand,  and  Wojciech  Matusik.  Experimental  analysis  of  BRDF  models.  In Kavita  Bala  and  Philip  Dutr´e,  editors,  Eurographics  Symposium  on  Rendering,  pages  117–126, Konstanz, Germany, 2005. Eurographics Association.
+
+[22] Ko Nishino and Stephen Lombardi. Directional statistics-based reflectance model for isotropic bidirectional reflectance distribution functions. J. Opt. Soc. Am. A, 28(1):8–18, Jan 2011.
+
+[23] Michael Oren and Shree K. Nayar. Generalization of lambert’s reflectance model. In SIGGRAPH, pages 239–246. ACM, 1994.
+
+[24] Romain Pacanowski, Oliver Salazar Celis, Christophe Schlick, Xavier Granier, Pierre Poulin, and Annie Cuyt. Rational brdf. IEEE Transactions on Visualization and Computer Graphics, 99(PrePrints), 2012.
+
+[25] Bui-T. Phong. Illumination for computer generated pictures. Communications of the ACM, 18(6):311–317, June 1975.
+
+[26] Fabiano Romeiro, Yuriy Vasilyev, and Todd Zickler. Passive reflectometry. In Proceedings of the 10th European Conference on Computer Vision: Part IV, ECCV ’08, pages 859–872, Berlin, Heidelberg, 2008. Springer-Verlag.
+
+[27] Iman Sadeghi, Heather Pritchett, Henrik Wann Jensen, and Rasmus Tamstorf. An artist friendly hair shading system. In ACM SIGGRAPH 2010 papers, SIGGRAPH ’10, pages 56:1–56:10, New York, NY, USA, 2010. ACM.
+
+[28] Christophe Schlick. An Inexpensive BRDF Model for Physically-Based Rendering. Computer Graphics Forum, 13(3):233–246, 1994.
+
+[29] B. Smith. Geometrical shadowing of a random rough surface. IEEE Trans. Ant. and Propagation, AP-15(5):668–671, September 1967.
+
+[30] K. Torrance and E. Sparrow. Theory for off-specular reflection from roughened surfaces. J. Optical Soc. America, 57:1105–1114, 1967.
+
+[31] S. Trowbridge and K. P. Reitz. Average irregularity representation of a rough ray reflection.
+Journal of the Optical Society of America, 65(5):531–536, May 1975.
+
+[32] Bruce Walter. Notes on the Ward BRDF. Technical Report PCG-05-06, Cornell Program of Computer Graphics, 2005.
+
+[33] Bruce Walter, Stephen R. Marschner, Hongsong Li, and Kenneth E. Torrance. Microfacet models for refraction through rough surfaces. In Proceedings of the Eurographics Symposium on Rendering, 2007.
+
+[34]  Gregory J. Ward. Measuring and modeling anisotropic reflection. In Edwin E. Catmull, editor,
+*Computer Graphics (SIGGRAPH ’92 Proceedings)*, volume 26, pages 265–272, July 1992.
+
+[35] L. B. Wolff, S. K. Nayar, and M. Oren. Improved diffuse reflection models for computer vision.
+*International Journal of Computer Vision*, 30(1):55–71, October 1998.
+
+## А Избранная история моделей BRDF, используемых в графике
+
+- Beckmann 1963 [5] provided a model for scattering from rough surfaces based on a Gaussian distribution of surface slopes.
+
+- Torrance and Sparrow 1967 [30] introduced the microfacet model. A Gaussian distribution of microfacet angles was assumed and a microfacet shadowing factor was derived from simplifying geometric assumptions.
+
+- Smith 1967 [29] derived a shadowing function from the microfacet distribution. Notably, this shadowing function varied with surface roughness.
+
+- Phong 1975 [25] proposed a computationally simple model of a specular highlight using an ex-ponentiated cosine.
+
+- Trowbridge and Reitz 1975 [31] derived a new microfacet distribution based on average surface irregularity of curved microsurfaces derived from an ellipsoid of revolution. They fit their model to measured data for rough glass and compared their results with Gaussian, Beckmann, Sirohi, and Berry distributions.
+
+- Blinn 1977 [6] implemented the Torrance-Sparrow model with the Trowbridge-Reitz distribution (chosen for its computational efficiency as well as its physical basis). Blinn also proposed a microfacet distribution based based on the Phong model, commonly referred to as “Blinn Phong,” by adapting it to the more physically correct half-vector formulation.
+
+- Cook and Torrance 1981 [7] implemented the Torrance-Sparrow model with the Beckmann dis- tribution and studied spectral shifts due to the Fresnel factor.
+
+- He, Torrance, Sillion, and Greenberg 1991 [12] presented a model that included specular, di- rectional diffuse, and uniform diffuse components. The model is derived for polarized light and simplified for unpolarized light.
+
+- Ward 1992 [34] presented an anisotropic specular model derived from the 
+
+- Beckmann distribution. Walter 2005 [32] provided a more efficient exact implementation.
+
+- Lewis 1993 [16] proposed a “modified Phong” model that included a normalization term for energy conservation.
+
+- Hanrahan and Krueger 1993 [11] developed a diffuse BRDF model that approximates subsurface transport.
+
+- Oren and Nayar 1994 [23] derived a diffuse model for rough surfaces based on Lambertian mi- crofacets.
+
+- Schlick 1994 [28] developed rational approximations to the various components of the microfacet model. The Schlick Fresnel approximation is widely used. Also, Schlick recognized the discon- tinuity in the Torrance-Sparrow shadowing term and suggested an approximation of the Smith shadowing function as an alternative. Schlick also presented an approximation to the Beckmann distribution.
+
+- Lafortune 1997 [15] proposed using a sum of arbitrarily oriented Phong lobes as the basis for a general model.
+
+- Wolff, Nayar and Oren 1998 [35] developed an improved diffuse model for very smooth surfaces which are darker at grazing angles than Lambert diffuse due to the Fresnel effect. This model is also combined in an approximate form with the Oren Nayar model to represent a continuum of smooth to rough diffuse surfaces.
+
+- Neumann et al. 1999 [19] proposed a “stretched Phong” model intended for metallic surfaces that has an albedo that becomes flat as the surface becomes shiny.
+
+- Neumann et al. 1999b [20] proposed a process to “pump up” the albedo of arbitrary BRDFs to improve energy balance. Previous models were shown to have an albedo that falls off too quickly with incident angle (except for the Ward model which is shown to diverge at grazing incidence). Each iterative pump up divides the BRDF by a measured correction factor making the albedo progressively flatter.
+
+- Ashikhmin, Premoˇze, and Shirley 2000 [2] derived a shadowing function from numeric integration of arbitrary microfacet distributions.
+
+- Ashikhmin and Shirley 2000 [3] presented a anisotropic Phong model that included a Fresnel- weighted diffuse and energy conservation guarantees.
+
+- Kelemen and Szirmay-Kalos 2001 [13] proposed an alternative shadowing term that approximates the Torrance-Sparrow shadowing function with a differentiable form. A coupled-diffuse model is also proposed such that the total albedo is always 1.
+
+- Du¨r 2006  [8] improved  the energy  balance  of the Ward model.
+
+- Edwards et al. 2006 [9] proposed the “halfway vector disk” as a new domain for modeling specular distributions with the goal of perfect energy conservation (albedo = 1). An alternate non-conservative form is also presented for data fitting.
+
+- Ashikhmin  and  Premoˇze  2007  [1]  presented  the  “distribution  BRDF”  which  smooths  out  the discontinuity in the shadowing term of Ashikhmin Shirley. A simple method for estimating specular distributions from backscattering images (such as from a single flash-lit photograph) is also provided.
+
+- Walter et al. 2007 [33] derived Smith shadowing functions for the Phong and GGX distributions and provided an approximation of Smith shadowing for the Beckmann distribution. Note: GGX is equivalent to the Trowbridge-Reitz distribution.
+
+- Romeiro et al. 2008 [26] showed than the MERL materials are well-represented by a simple bivariate form, $ρ(θ_h, θ_d)$ and exploited this fact to proposed a simplified BRDF capture method.
+
+- Geisler-Moroder  and  Du¨r  2010  [10]  further  refined  this  model  to  restore  Helmholtz  reciprocity and guarantee energy conservation.
+
+- Kurt et al 2010 [14] extended the Beckmann distribution to anisotropic form and proposed a new parameterized shadowing function giving control over albedo and improving fitting for some materials. Two specular lobes are suggested for fitting many of the MERL materials.
+
+- Nishino and Lombardi 2011 [22] proposed the “hemispherical exponential power distribution” or “Hemi-EPD” which has an additional degree of freedom to improve fitting power. The Hemi- EPD is used as a basis for the entire BRDF and parameters are fit to individual $θ_d$ slices and interpolated. Additionally, multiple lobes per $θ_d$ slice are required for many materials.
+
+- L¨ow  et  al.   2012  [17]  proposed  a  new  “ABC”  microfacet  distribution  inspired  by  Rayleigh-Rice smooth-surface scattering theory. Additionally, the “projected deviation vector” is presented as an alternative to the half-vector parameterization for data fitting.
+
+- Pacanowski et al. 2012 [24] developed a framework for fitting rational functions to general isotropic BRDFs over the $(θ_h, θ_d)$ domain. An anisotropic form is also proposed as a simple scaling of the isotropic form with respect to $φ_h$.
+
+- Bagher et al. 2012 [4] proposed a new “shifted gamma” or “SGD” microfacet distribution derived to fit the range of observed slopes in the MERL database. An approximation of the Smith shadowing function for the SGD is provided. Additionally, the Fresnel term is modified with a correction term providing an additional degree of freedom, improving fitting ability.
+
+## Б Распределение микрограней GTR
+
+**<font color=gray>B GTR Microfacet Distribution</font>**
+
+### Б.1 Обзор распределения микрограней
+
+**<font color=gray>B.1 Microfacet distribution review</font>**
+
+Правдоподобное распределение микрограней должно быть нормализовано по полусфере таким образом, чтобы проецируемая площадь микрограней была равна 1 [33]:
+
+<font color=gray>A plausible microfacet distribution must be normalized over the hemisphere such that the projected area of the microfacets is 1 [33]:</font>
+
+$$
+\int_{\Omega}D(\theta_h)\cos\theta_hd\omega=1
+$$
+
+или в сферических координатах:
+
+<font color=gray>or in spherical coordinates:</font>
+
+$$
+\int^{2\pi}_0\int^{\pi/2}_0D(\theta_h)\cos\theta_h\sin\theta_hd\theta_hd\phi_h=1
+$$
+
+<!-- \mathrm{d} -->
+
+Для выборки по важности удобно выбрать $pdf_h=D(\theta_h)\cosθ_h$, учитывая, что она уже нормализована. Обратите внимание, $pdf_h$ — это плотность относительно половины вектора; плотность относительно вектора света $\boldsymbol{l}$ равна:
+
+<font color=gray>For importance sampling, it is convenient to choose $pdf_h=D(\theta_h)\cosθ_h$ given that it is already normalized. Note, $pdf_h$ is the density with respect to the half vector; the density with respect to the light vector $\boldsymbol{l}$ is:</font>
+
+$$
+pdf_l=\frac{pdf_h}{4(\boldsymbol{l}\cdot\boldsymbol{h})}
+$$
+
+Для генерации выборок по полусфере pdf разбивается на сферические компоненты, $pdf_h=pdf_{\theta_h}pdf_{\phi_h}$. Для изотропных распределений эта факторизация тривиальна, поскольку распределение не зависит от $\phi_h$ и $pdf_{\phi_h}=\frac{1}{2\pi}$. Для анизотропных распределений факторизация выполняется путем интегрирования из $\theta_h$ для получения:
+
+<font color=gray>To generate samples over the hemisphere, the pdf is split into spherical components, $pdf_h=pdf_{\theta_h}pdf_{\phi_h}$. For isotropic distributions this factorization is trivial as the distribution has no dependence on $\phi_h$ and $pdf_{\phi_h}=\frac{1}{2\pi}$. For anisotropic distributions, the factorization is accomplished by integrating out $\theta_h$ to get:</font>
+
+$$
+pdf_{\phi_h}=\int^{\frac\pi2}_0pdf_hd\theta_h
+$$
+
+$$
+pdf_{\theta_h}=\frac{pdf_h}{pdf_{\phi_h}}
+$$
+
+Затем каждый компонент pdf интегрируется для формирования cdf, а затем инвертируется для формирования соответствующей функции выборки:
+
+<font color=gray>Each component pdf is then integrated to form a cdf and then inverted to form a corresponding
+sampling function:</font>
+
+$$
+cdf(x)=\int^x_0pdf_xdx
+$$
+
+$$
+x=cdf^{-1}(\xi)
+$$
+
+Учитывая две функции выборки и равномерные случайные величины $\xi_1$ и $\xi_2$, $\theta_h$ и $\phi_h$ можно вычислить и спроецировать в систему координат вокруг нормали $\mathbf{n}$, касательной $\mathbf{x}$ и бикасательной $\mathbf{y}$ для формирования половины вектора $\mathbf{h}$. Наконец, если задан вектор $\mathbf{v}$, $\mathbf{l}$ можно вычислить, отразив $\mathbf{h}$ относительно $\mathbf{v}$: 
+
+<font color=gray>Given the two sampling functions and uniform random variables $\xi_1$ and $\xi_2$, $\theta_h$ and $\phi_h$ can be computed and projected to the coordinate frame around the normal $\mathbf{n}$, tangent $\mathbf{x}$, and bitangent $\mathbf{y}$ to form the half vector $\mathbf{h}$. Finally, given a $\mathbf{v}$ vector, $\mathbf{l}$ can be computed by reflecting $\mathbf{h}$ across $\mathbf{v}$:</font>
+
+$$
+\mathbf{h}=\sin\theta_h\cos\phi_h\mathbf{x}+\sin\theta_h\sin\phi_h\mathbf{y}+\cos\theta_h\mathbf{n}
+$$
+
+$$
+\mathbf{l}=2(\mathbf{v}\cdot\mathbf{h})\mathbf{h}−\mathbf{v}
+$$
+
+### Б.2 GTR
+
+**<font color=gray>B.2 GTR</font>**
+
+После приведенных выше выводов нормализованные уравнения распределения GTR и выборки имеют вид:
+
+<font color=gray>Following the above derivations, the normalized GTR distribution and sampling equations are:</font>
+
+$$
+D_\text{GTR}(\theta_h)=\frac{(\gamma-1)(\alpha^2-1)}{\pi(1-(\alpha^2)^{1-\gamma})}\frac{1}{(1+(\alpha^2-1)\cos^2\theta_h)^\gamma}\qquad(1)
+$$
+
+$$
+\phi_h=2\pi\xi_1\qquad(2)
+$$
+
+$$ 
+\cos\theta_h=\sqrt{\frac{1-[(\alpha^2)^{1-\gamma}(1-\xi_2)+\xi_2]^{\frac{1}{1-\gamma}}}{1-\alpha^2}}\qquad(3)
+$$
+
+Это распределение справедливо для любого $\gamma>0$, однако при $\gamma=1$ возникает сингулярность. Принимая предел как $\gamma\longrightarrow1$, получаем эту альтернативную форму:
+
+<font color=gray>This distribution is valid for any $\gamma>0$, however, at $\gamma=1$ there is a singularity. Taking the limit as $\gamma\longrightarrow1$ produces this alternate form:</font>
+
+$$
+D_{\text{GTR}_1}(\theta_h)=\frac{\alpha^2-1}{\pi\log\alpha^2}\frac{1}{(1+(\alpha^2-1)\cos^2\theta_h)}\qquad(4)
+$$
+
+$$
+\cos\theta_h=\sqrt{\frac{1-(\alpha^2)^{1-\xi_2}}{1-\alpha^2}}\qquad(5)
+$$
+
+Значения $\gamma=3/2$ и $\gamma=2$ имеют упрощенные формы, причем последнее эквивалентно GTX:
+
+<font color=gray>The values of $\gamma=3/2$ and $\gamma=2$ have simplified forms, the latter being equivalent to GGX:</font>
+
+
+$$
+D_{\text{GTR}_{3/2}}(\theta_h)=\frac{\alpha^2+\alpha}{2\pi}\frac{1}{(1+(\alpha^2-1)\cos^2\theta_h)^{3/2}}\qquad(6)
+$$
+
+$$
+\cos\theta_h=\sqrt{\frac{1}{1-\alpha^2}\bigg(1-\frac{\alpha^2}{(1+(\alpha-1)\xi_2)^2}\bigg)}\qquad(7)
+$$
+
+$$
+D_{\text{GTR}_2}(\theta_h)=\frac{\alpha^2}{\pi}\frac{1}{(1+(\alpha^2-1)\cos^2\theta_h)^2}\qquad(8)
+$$
+
+$$
+\cos\theta_h=\sqrt{\frac{1-\xi_2}{1+(\alpha^2-1)\xi_2}}\qquad(9)
+$$
+
+Для формирования анизотропного распределения шероховатость изменяется в зависимости от $\phi$ путем замены $\frac{1}{\alpha^2}$ на $\frac{\cos^2\phi}{\alpha^2_x}+\frac{\sin^2\phi}{\alpha^2_y}$. Для $\gamma=2$ это приводит к:
+
+<font color=gray>To form an anisotropic distribution, the roughness is varied with $\phi$ by replacing $\frac{1}{\alpha^2}$ with $\frac{\cos^2\phi}{\alpha^2_x}+\frac{\sin^2\phi}{\alpha^2_y}$. For $\gamma=2$ this results in:</font>
+
+$$
+D_{\text{GTR}_2\text{aniso}}=\frac{1}{\pi}\frac{1}{\alpha_x\alpha_y}
+\frac{1}{\big(\sin^2\theta_h({\cos^2\phi_h}/{\alpha^2_x}+{\sin^2\phi_h}/{\alpha^2_y})+\cos^2\theta_h\big)^2}\qquad(10)
+$$
+
+$$
+\tan\phi_h=\frac{\alpha_y}{\alpha_x}\tan(2\pi\xi_1)\qquad(11)
+$$
+
+$$
+\cos\theta_h=\sqrt{\frac{1-\xi_2}{1+[1/({\cos^2\phi_h}/{\alpha^2_x}+{\sin^2\phi_h}/{\alpha^2_y})-1]\xi_2}}\qquad(12)
+$$
+
+Подстановка этих векторных тождеств
+
+<font color=gray>Substituting these vector identities</font>
+
+$$
+\begin{array}{lcl}
+    \mathbf{h}\cdot\mathbf{x}&=&\sin\theta_h\cos\phi_h\\
+    \mathbf{h}\cdot\mathbf{y}&=&\sin\theta_h\sin\phi_h\\
+    \mathbf{h}\cdot\mathbf{n}&=&\cos\theta_h
+\end{array}
+$$
+
+в уравнение (10) дает эффективную альтернативную форму:
+
+<font color=gray>into equation (10) produces an efficient alternate form:</font>
+
+$$
+D_{\text{GTR}_2\text{aniso}}=\frac{1}{\pi}\frac{1}{\alpha_x\alpha_y}
+\frac{1}{\big((\mathbf{h}\cdot\mathbf{x})^2/{\alpha^2_x}+(\mathbf{h}\cdot\mathbf{y})^2/{\alpha^2_y}+(\mathbf{h}\cdot\mathbf{n})^2\big)^2}\qquad(13)
+$$
+
+Кроме того, разложение $\tan\phi_h$ из уравнения (11) на $\sin\phi_h$ и $\cos\phi_h$ позволяет избежать специальной обработки для квадрантов $\phi_h$, а также позволяет вычислять $\mathbf{h}$ более непосредственно:
+
+<font color=gray>Further, factoring $\tan\phi_h$ from equation (11) into $\sin\phi_h$ and $\cos\phi_h$, avoids special handling for the quadrants of $\phi_h$ and also allows $\mathbf{h}$ to be calculated more directly:</font>
+
+$$
+\sin\phi_h=\frac{\alpha_y\sin(2\pi\xi_1)}{r}
+$$
+
+$$
+\cos\phi_h=\frac{\alpha_x\cos(2\pi\xi_1)}{r}
+$$
+
+$$
+\tan\theta_h=r\sqrt{\frac{\xi_2}{1-\xi_2}}
+$$
+
+$$
+\mathbf{h'}=\sqrt{\frac{\xi_2}{1-\xi_2}}
+[{\alpha_x\cos(2\pi\xi_1)}\mathbf{x}+
+{\alpha_y\sin(2\pi\xi_1)}\mathbf{y}]
++\mathbf{n}
+\qquad(14)
+
+$$
+
+$$
+\mathbf{h}=\frac{\mathbf{h'}}{|\mathbf{h'}|}
+\qquad(15)
+$$
+
+Примечание: $\mathbf{h'}$ — это *спроецированная* половина вектора, $\tan\theta_h\cos\phi_h\mathbf{x}+\tan\theta_h\sin\phi_h\mathbf{y}+\mathbf{n}$, а $r$ — это нормировочный множитель (равный $\sqrt{1/(\cos^2\phi_h/\alpha^2_x+\sin^2\phi_h/\alpha^2_y)}$), который можно игнорировать из-за сокращения.
+
+Для произвольных значений $\gamma$ нормализация анизотропного распределения, к сожалению, не имеет замкнутой формы.
+
+<font color=gray>Note: $\mathbf{h'}$ is the *projected* half vector, $\tan\theta_h\cos\phi_h\mathbf{x}+\tan\theta_h\sin\phi_h\mathbf{y}+\mathbf{n}$, and $r$ is a normalization factor (equal to $\sqrt{1/(\cos^2\phi_h/\alpha^2_x+\sin^2\phi_h/\alpha^2_y)}$) which can be ignored due to cancellation.
+
+For arbitrary values of $\gamma$, the normalization of the anisotropic distribution unfortunately does not have a closed form.</font>
+
+## Дополнение
+
+**<font color=gray>Adenda</font>**
+
+### Подробнее об анизотропном блеске
+
+**<font color=gray>Anisotropic specular details</font>**
+
+В исходных заметках опущена параметризация, которая выглядит следующим образом:
+
+<font color=gray>The original notes omitted the parameterization which is as follows:</font>
+
+$$ aspect=\sqrt{1-0.9anisotropic} $$
+
+$$ \alpha_x=roughness^2/aspect $$
+
+$$ \alpha_y=roughness^2\times{aspect} $$
+
+Коэффициент 0.9 ограничивает соотношение сторон до 10:1.
+
+<font color=gray>The 0.9 factor limits the aspect ratio to 10:1.</font>
+
+### Подробности о блеске
+
+**<font color=gray>Sheen details</font>**
+
+В исходных заметках отсутствует описание блеска. На основе наблюдений за образцами тканей, описанных в разделе 4.5, преобладающим эффектом, отсутствующим в базовой диффузной + зеркальной модели, является дополнительная отражательная способность скольжения, наблюдаемая вдоль верхней части срезов изображения BRDF. Этот компонент очень похож на фактор Френеля. Поскольку эта форма очень похожа на френелевскую, мы моделируем ее как дополнительный лепесток BRDF, который использует форму Шлика-Френеля, $sheen\times(1-\cos\theta_d)^5$, и опционально тонируется в сторону базового цвета в соответствии с параметром $sheenTint$.
+
+<font color=gray>The original notes omitted a description of sheen. Based on observations of the fabric samples described in section 4.5, the predominant effect missing from the base diffuse + specular model is the extra grazing reflectance seen along the top of the BRDF image slices. This component is very similar to the Fresnel factor. As this shape is very Fresnel-like, we model this as an additional BRDF lobe that uses the Schlick Fresnel shape, $sheen\times(1-\cos\theta_d)^5$, and is optionally tinted towards the base color according to the $sheenTint$ parameter.</font>
+
+### Specular G пересмотрен
+
+**<font color=gray>Specular G revisited</font>**
+
+Недавно Хайц опубликовал подробный анализ функции затенения микрограней, *Understanding the Masking-Shadowing Function in Microfacet-Based BRDFs*, JCGT 2014. Хайц предложил «слабый тест белой печи» для проверки правдоподобности физически обоснованных функций маскирования и показал, что из известных функций затенения правдоподобны только модель затенения Смита [29, 33] и модель V-полости [7], хотя последняя может быть менее реалистичной.
+Основываясь на анализе Хайца, мы исключили наше специальное переотображение Smith G для нашего первичного зеркала. Для металлов результат, очевидно, лучше, а для общих материалов это, возможно, так, особенно при рендеринге в полной среде GI с правдоподобными источниками света. Кажется весьма вероятным, что отсутствие корреляции модели Уолтера с гладкими материалами было результатом ошибки измерения в данных MERL при скользящих углах. Хайц также вывел правильную анизотропную форму затенения Смита, деталь, которую мы проигнорировали.
+Для прозрачного покрытия мы по-прежнему используем изотропный лепесток GTR 1.0 с более широким хвостом и, по общему признанию, случайным фактором G. Это не означает, что это физически правдоподобная поверхность микрограней с соответствующим затенением и маскированием, а скорее представляет собой тонкий полупрозрачный слой, который может охватывать множественные события отражения и пропускания, и наша текущая формулировка хорошо зарекомендовала себя для большого количества материалов. Тем не менее, физическая модель, охватывающая все эти эффекты, была бы кстати.
+
+<font color=gray>
+Heitz recently published a thorough analysis of the microfacet shadowing function, *Understanding the Masking-Shadowing Function in Microfacet-Based BRDFs*, JCGT 2014. Heitz proposed the “weak white furnace test” for verifying the plausibility of physically based masking functions and showed that, of known shadowing functions, only the Smith shadowing model [29, 33] and the V-cavity model [7] are plausible, though the latter may be less realistic.
+Based on Heitz’ analysis, we have eliminated our ad-hoc remapping of Smith G for our primary specular. For metals, the result is obviously better, and for general materials it is arguably so, especially when rendering in a full GI environment with plausible light sources. It seems very likely that the lack of correlation of the Walter model to the smooth materials was a result of measurement error in the MERL data at grazing angles. Heitz also derived the correct anisotropic form of the Smith shadowing, a detail we had neglected.
+For clearcoat, we still use the isotropic GTR 1.0 lobe with the wider tail and the admittedly ad-hoc G factor. This is not meant to represent a physically plausible microfacet surface with corresponding shadowing and masking, but rather it is representing a thin, translucent layer that may encompass multiple reflection and transmission events, and our current formulation has worked well for a large variety of materials. That said, a physical model that encompassed all of these effects would be welcome.</font>
+
+### История изменений
 
 Версия 2 (31 августа 2012 г.): исправлен коэффициент нормализации в уравнении 4.
 
