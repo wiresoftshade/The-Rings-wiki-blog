@@ -14,6 +14,8 @@ $\frac{abc}{xyz}\qquad$`\frac{abc}{xyz}`
 
 $f’\qquad$ `f’`
 
+$f'\qquad$ `f'`
+
 $\sqrt{abc}\qquad$ `\sqrt{abc}`
 
 $\sqrt[n]{abc}\qquad$`\sqrt[n]{abc}`
