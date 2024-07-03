@@ -8,37 +8,53 @@
     
     > *Torrance and Sparrow 1967 introduced the microfacet model. A Gaussian distribution of microfacet angles was assumed and a microfacet shadowing factor was derived from simplifying geometric assumptions.*
 
-- Смит 1967 [29] вывел функцию затенения из распределения микрограней. Примечательно, что эта функция затенения менялась в зависимости от шероховатости поверхности.
+- **Смит 1967** [29] вывел функцию затенения из распределения микрограней. Примечательно, что эта функция затенения менялась в зависимости от шероховатости поверхности.
   
-    > **Smith 1967** *derived a shadowing function from the microfacet distribution. Notably, this shadowing function varied with surface roughness.*
+    > *Smith 1967 derived a shadowing function from the microfacet distribution. Notably, this shadowing function varied with surface roughness.*
 
-- Phong 1975 [25] предложил вычислительно простую модель зеркального блика с использованием экспоненциированного косинуса.
+- **Phong 1975** [25] предложил вычислительно простую модель зеркального блика с использованием экспоненциированного косинуса.
 
-    > **Phong 1975** *proposed a computationally simple model of a specular highlight using an ex-ponentiated cosine.*
+    > *Phong 1975 proposed a computationally simple model of a specular highlight using an exponentiated cosine.*
 
-- Троубридж и Рейц 1975 [31] вывели новое распределение микрограней на основе средней поверхностной неровности изогнутых микроповерхностей, полученных из эллипсоида вращения. Они подогнали свою модель к измеренным данным для грубого стекла и сравнили свои результаты с распределениями Гаусса, Бекмана, Сирохи и Берри.
+- **Троубридж и Рейц 1975** [31] вывели новое распределение микрограней на основе средней поверхностной неровности изогнутых микроповерхностей, полученных из эллипсоида вращения. Они подогнали свою модель к измеренным данным для грубого стекла и сравнили свои результаты с распределениями Гаусса, Бекмана, Сирохи и Берри.
 
-    > **Trowbridge and Reitz 1975** *derived a new microfacet distribution based on average surface irregularity of curved microsurfaces derived from an ellipsoid of revolution. They fit their model to measured data for rough glass and compared their results with Gaussian, Beckmann, Sirohi, and Berry distributions.*
+    > *Trowbridge and Reitz 1975 derived a new microfacet distribution based on average surface irregularity of curved microsurfaces derived from an ellipsoid of revolution. They fit their model to measured data for rough glass and compared their results with Gaussian, Beckmann, Sirohi, and Berry distributions.*
 
-- Blinn 1977 [6] implemented the Torrance-Sparrow model with the Trowbridge-Reitz distribution (chosen for its computational efficiency as well as its physical basis). Blinn also proposed a microfacet distribution based based on the Phong model, commonly referred to as “Blinn Phong,” by adapting it to the more physically correct half-vector formulation.
+- **Блинн 1977** [6] реализовал модель Торранса-Спарроу с распределением Троубриджа-Рейтца (выбранным из-за его вычислительной эффективности, а также его физической основы). Блинн также предложил микрогранное распределение на основе модели Фонга, обычно называемое «Блинн-Фонг», адаптировав его к более физически корректной формулировке полувектора.
 
-- Cook and Torrance 1981 [7] implemented the Torrance-Sparrow model with the Beckmann dis- tribution and studied spectral shifts due to the Fresnel factor.
+    > *Blinn 1977 implemented the Torrance-Sparrow model with the Trowbridge-Reitz distribution (chosen for its computational efficiency as well as its physical basis). Blinn also proposed a microfacet distribution based on the Phong model, commonly referred to as “Blinn Phong,” by adapting it to the more physically correct half-vector formulation.*
 
-- He, Torrance, Sillion, and Greenberg 1991 [12] presented a model that included specular, di- rectional diffuse, and uniform diffuse components. The model is derived for polarized light and simplified for unpolarized light.
+- **Кук и Торранс 1981** [7] реализовали модель Торранса-Спарроу с распределением Бекмана и изучили спектральные сдвиги, обусловленные фактором Френеля.
 
-- Ward 1992 [34] presented an anisotropic specular model derived from the 
+    > *Cook and Torrance 1981 implemented the Torrance-Sparrow model with the Beckmann distribution and studied spectral shifts due to the Fresnel factor.*
 
-- Beckmann distribution. Walter 2005 [32] provided a more efficient exact implementation.
+- **Хи, Торранс, Силлион и Гринберг 1991** [12] представили модель, которая включала зеркальные, направленные диффузные и однородные диффузные компоненты. Модель выведена для поляризованного света и упрощена для неполяризованного света.
 
-- Lewis 1993 [16] proposed a “modified Phong” model that included a normalization term for energy conservation.
+    > *He, Torrance, Sillion, and Greenberg 1991 presented a model that included specular, directional diffuse, and uniform diffuse components. The model is derived for polarized light and simplified for unpolarized light.*
 
-- Hanrahan and Krueger 1993 [11] developed a diffuse BRDF model that approximates subsurface transport.
+- **Уорд 1992** [34] представил анизотропную зеркальную модель, полученную из распределения Бекмана. **Уолтер 2005** [32] предоставил более эффективную точную реализацию.
 
-- Oren and Nayar 1994 [23] derived a diffuse model for rough surfaces based on Lambertian mi- crofacets.
+    > *Ward 1992 presented an anisotropic specular model derived from the Beckmann distribution. Walter 2005 provided a more efficient exact implementation.*
 
-- Schlick 1994 [28] developed rational approximations to the various components of the microfacet model. The Schlick Fresnel approximation is widely used. Also, Schlick recognized the discon- tinuity in the Torrance-Sparrow shadowing term and suggested an approximation of the Smith shadowing function as an alternative. Schlick also presented an approximation to the Beckmann distribution.
+- **Льюис 1993** [16] предложил «модифицированную модель Фонга», которая включала нормализующий член для сохранения энергии.
 
-- Lafortune 1997 [15] proposed using a sum of arbitrarily oriented Phong lobes as the basis for a general model.
+    > *Lewis 1993 proposed a “modified Phong” model that included a normalization term for energy conservation.*
+
+- **Ханрахан и Крюгер 1993** [11] разработали диффузную модель BRDF, которая аппроксимирует подповерхностный перенос.
+
+    > *Hanrahan and Krueger 1993 developed a diffuse BRDF model that approximates subsurface transport.*
+
+- **Орен и Наяр 1994** [23] вывели диффузную модель для шероховатых поверхностей на основе ламбертовских микрограней.
+
+    > *Oren and Nayar 1994 derived a diffuse model for rough surfaces based on Lambertian microfacets.*
+
+- **Шлик 1994** [28] разработал рациональные аппроксимации для различных компонентов модели микрограней. Широко используется приближение Шлика-Френеля. Кроме того, Шлик распознал разрыв в члене затенения Торранса-Спарроу и предложил приближение функции затенения Смита в качестве альтернативы. Шлик также представил приближение к распределению Бекмана.
+
+    > *Schlick 1994 developed rational approximations to the various components of the microfacet model. The Schlick Fresnel approximation is widely used. Also, Schlick recognized the discontinuity in the Torrance-Sparrow shadowing term and suggested an approximation of the Smith shadowing function as an alternative. Schlick also presented an approximation to the Beckmann distribution.*
+
+- **Лафортюн 1997** [15] предложил использовать сумму произвольно ориентированных лепестков Фонга в качестве основы для общей модели.
+
+    > *Lafortune 1997 proposed using a sum of arbitrarily oriented Phong lobes as the basis for a general model.*
 
 - Wolff, Nayar and Oren 1998 [35] developed an improved diffuse model for very smooth surfaces which are darker at grazing angles than Lambert diffuse due to the Fresnel effect. This model is also combined in an approximate form with the Oren Nayar model to represent a continuum of smooth to rough diffuse surfaces.
 
@@ -48,7 +64,7 @@
 
 - Ashikhmin, Premoˇze, and Shirley 2000 [2] derived a shadowing function from numeric integration of arbitrary microfacet distributions.
 
-- Ashikhmin and Shirley 2000 [3] presented a anisotropic Phong model that included a Fresnel- weighted diffuse and energy conservation guarantees.
+- Ashikhmin and Shirley 2000 [3] presented a anisotropic Phong model that included a Fresnel-weighted diffuse and energy conservation guarantees.
 
 - Kelemen and Szirmay-Kalos 2001 [13] proposed an alternative shadowing term that approximates the Torrance-Sparrow shadowing function with a differentiable form. A coupled-diffuse model is also proposed such that the total albedo is always 1.
 
