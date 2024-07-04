@@ -28,7 +28,7 @@
 
     > *Cook and Torrance 1981 implemented the Torrance-Sparrow model with the Beckmann distribution and studied spectral shifts due to the Fresnel factor.*
 
-- **Хи, Торранс, Силлион и Гринберг 1991** [12] представили модель, которая включала зеркальные, направленные диффузные и однородные диффузные компоненты. Модель выведена для поляризованного света и упрощена для неполяризованного света.
+- **Хе, Торранс, Силлион и Гринберг 1991** [12] представили модель, которая включала зеркальные, направленные диффузные и однородные диффузные компоненты. Модель выведена для поляризованного света и упрощена для неполяризованного света.
 
     > *He, Torrance, Sillion, and Greenberg 1991 presented a model that included specular, directional diffuse, and uniform diffuse components. The model is derived for polarized light and simplified for unpolarized light.*
 
@@ -56,23 +56,46 @@
 
     > *Lafortune 1997 proposed using a sum of arbitrarily oriented Phong lobes as the basis for a general model.*
 
-- Wolff, Nayar and Oren 1998 [35] developed an improved diffuse model for very smooth surfaces which are darker at grazing angles than Lambert diffuse due to the Fresnel effect. This model is also combined in an approximate form with the Oren Nayar model to represent a continuum of smooth to rough diffuse surfaces.
+- **Вольф, Наяр и Орен 1998** [35] разработали улучшенную диффузную модель для очень гладких поверхностей, которые темнее под углами скольжения, чем диффузия Ламберта из-за эффекта Френеля. Эта модель также объединена в приближенной форме с моделью Орена Наяра для представления континуума гладких и шероховатых диффузных поверхностей.
 
-- Neumann et al. 1999 [19] proposed a “stretched Phong” model intended for metallic surfaces that has an albedo that becomes flat as the surface becomes shiny.
+    > *Wolff, Nayar and Oren 1998 developed an improved diffuse model for very smooth surfaces which are darker at grazing angles than Lambert diffuse due to the Fresnel effect. This model is also combined in an approximate form with the Oren Nayar model to represent a continuum of smooth to rough diffuse surfaces.*
 
-- Neumann et al. 1999b [20] proposed a process to “pump up” the albedo of arbitrary BRDFs to improve energy balance. Previous models were shown to have an albedo that falls off too quickly with incident angle (except for the Ward model which is shown to diverge at grazing incidence). Each iterative pump up divides the BRDF by a measured correction factor making the albedo progressively flatter.
+- **Нейман и др. 1999** [19] предложили модель «растянутого Фонга», предназначенную для металлических поверхностей, альбедо которых становится плоским по мере того, как поверхность становится блестящей.
+    
+    > *Neumann et al. 1999 proposed a “stretched Phong” model intended for metallic surfaces that has an albedo that becomes flat as the surface becomes shiny.*
 
-- Ashikhmin, Premoˇze, and Shirley 2000 [2] derived a shadowing function from numeric integration of arbitrary microfacet distributions.
+- **Нейман и др. 1999b** [20] предложили процесс «накачки» альбедо произвольных BRDF для улучшения энергетического баланса. Было показано, что предыдущие модели имеют альбедо, которое слишком быстро сходит с углом падения (за исключением модели Уорда, которая, как показано, отклоняется от нормы при скользящем падении). Каждое итеративное накачивание делит BRDF на измеренный поправочный коэффициент, делая альбедо постепенно более плоским.
 
-- Ashikhmin and Shirley 2000 [3] presented a anisotropic Phong model that included a Fresnel-weighted diffuse and energy conservation guarantees.
+    > *Neumann et al. 1999b proposed a process to “pump up” the albedo of arbitrary BRDFs to improve energy balance. Previous models were shown to have an albedo that falls off too quickly with incident angle (except for the Ward model which is shown to diverge at grazing incidence). Each iterative pump up divides the BRDF by a measured correction factor making the albedo progressively flatter.*
 
-- Kelemen and Szirmay-Kalos 2001 [13] proposed an alternative shadowing term that approximates the Torrance-Sparrow shadowing function with a differentiable form. A coupled-diffuse model is also proposed such that the total albedo is always 1.
+- **Ашихмин, Преможе и Ширли 2000** [2] вывели функцию затенения путем численного интегрирования произвольных распределений микрограней.
 
-- Du¨r 2006  [8] improved  the energy  balance  of the Ward model.
+    > *Ashikhmin, Premože, and Shirley 2000 derived a shadowing function from numeric integration of arbitrary microfacet distributions.*
+
+- **Ашихмин и Ширли 2000** [3] представили анизотропную модель Фонга, которая включала диффуз с весами Френеля и гарантии сохранения энергии.
+
+    > *Ashikhmin and Shirley 2000 presented a anisotropic Phong model that included a Fresnel-weighted diffuse and energy conservation guarantees.*
+
+- **Келемен и Ширмей-Калос 2001** [13] предложили альтернативный термин затенения, который аппроксимирует функцию затенения Торранса-Спарроу с дифференцируемой формой. Также предлагается связанно-диффузная модель, так что общее альбедо всегда равно 1.
+
+    > *Kelemen and Szirmay-Kalos 2001 proposed an alternative shadowing term that approximates the Torrance-Sparrow shadowing function with a differentiable form. A coupled-diffuse model is also proposed such that the total albedo is always 1.*
+
+- **Дюр 2006** [8] улучшил энергетический баланс модели Уорда.
+
+    > *Dür 2006 improved the energy balance of the Ward model.*
+
+<!-- Footnotes
+---------------------------
+
+Some text with a footnote.[^1]
+
+[^1]: The footnote. -->
 
 - Edwards et al. 2006 [9] proposed the “halfway vector disk” as a new domain for modeling specular distributions with the goal of perfect energy conservation (albedo = 1). An alternate non-conservative form is also presented for data fitting.
 
-- Ashikhmin  and  Premoˇze  2007  [1]  presented  the  “distribution  BRDF”  which  smooths  out  the discontinuity in the shadowing term of Ashikhmin Shirley. A simple method for estimating specular distributions from backscattering images (such as from a single flash-lit photograph) is also provided.
+- **Ашихмин и Преможе 2007** [1] представили «распределение BRDF», которое сглаживает разрыв в затеняющем члене Ашихмина Ширли. Также представлен простой метод оценки зеркальных распределений из изображений обратного рассеяния (например, из одной фотографии, освещенной вспышкой).
+
+    > *Ashikhmin  and  Premože  2007  [1]  presented  the  “distribution  BRDF”  which  smooths  out  the discontinuity in the shadowing term of Ashikhmin Shirley. A simple method for estimating specular distributions from backscattering images (such as from a single flash-lit photograph) is also provided.*
 
 - Walter et al. 2007 [33] derived Smith shadowing functions for the Phong and GGX distributions and provided an approximation of Smith shadowing for the Beckmann distribution. Note: GGX is equivalent to the Trowbridge-Reitz distribution.
 
@@ -80,11 +103,15 @@
 
 - Geisler-Moroder  and  Du¨r  2010  [10]  further  refined  this  model  to  restore  Helmholtz  reciprocity and guarantee energy conservation.
 
-- Kurt et al 2010 [14] extended the Beckmann distribution to anisotropic form and proposed a new parameterized shadowing function giving control over albedo and improving fitting for some materials. Two specular lobes are suggested for fitting many of the MERL materials.
+- Kurt et al. 2010 [14] extended the Beckmann distribution to anisotropic form and proposed a new parameterized shadowing function giving control over albedo and improving fitting for some materials. Two specular lobes are suggested for fitting many of the MERL materials.
 
-- Nishino and Lombardi 2011 [22] proposed the “hemispherical exponential power distribution” or “Hemi-EPD” which has an additional degree of freedom to improve fitting power. The Hemi- EPD is used as a basis for the entire BRDF and parameters are fit to individual $θ_d$ slices and interpolated. Additionally, multiple lobes per $θ_d$ slice are required for many materials.
+- **Нишино и Ломбарди 2011** [22] предложили «полусферическое экспоненциальное распределение мощности» или «Hemi-EPD», которое имеет дополнительную степень свободы для улучшения мощности подгонки. Hemi-EPD используется в качестве основы для всего BRDF, а параметры подгоняются под отдельные $θ_d$ срезы и интерполируются. Кроме того, требуется несколько лепестков на срез $θ_d$ для многих материалов.
+  
+    > *Nishino and Lombardi 2011 proposed the “hemispherical exponential power distribution” or “Hemi-EPD” which has an additional degree of freedom to improve fitting power. The Hemi- EPD is used as a basis for the entire BRDF and parameters are fit to individual $θ_d$ slices and interpolated. Additionally, multiple lobes per $θ_d$ slice are required for many materials.*
 
-- L¨ow  et  al.   2012  [17]  proposed  a  new  “ABC”  microfacet  distribution  inspired  by  Rayleigh-Rice smooth-surface scattering theory. Additionally, the “projected deviation vector” is presented as an alternative to the half-vector parameterization for data fitting.
+- **Лёв и др. 2012** [17] предложили новое распределение микрограней «ABC», вдохновленное теорией рассеяния гладких поверхностей Рэлея-Райса. Кроме того, «проецируемый вектор отклонения» представлен как альтернатива параметризации полувектора для подгонки данных.
+  
+    > *Löw  et  al.   2012   proposed  a  new  “ABC”  microfacet  distribution  inspired  by  Rayleigh-Rice smooth-surface scattering theory. Additionally, the “projected deviation vector” is presented as an alternative to the half-vector parameterization for data fitting.*
 
 - Pacanowski et al. 2012 [24] developed a framework for fitting rational functions to general isotropic BRDFs over the $(θ_h, θ_d)$ domain. An anisotropic form is also proposed as a simple scaling of the isotropic form with respect to $φ_h$.
 
