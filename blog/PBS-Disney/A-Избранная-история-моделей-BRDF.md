@@ -84,26 +84,29 @@
 
     > *Dür 2006 improved the energy balance of the Ward model.*
 
-<!-- Footnotes
----------------------------
+- **Эдвардс и др. 2006** [9] предложили «диск вектора половины пути» в качестве новой области для моделирования зеркальных распределений с целью идеального сохранения энергии (альбедо = 1). Также представлена ​​альтернативная неконсервативная форма для подгонки данных.
 
-Some text with a footnote.[^1]
-
-[^1]: The footnote. -->
-
-- Edwards et al. 2006 [9] proposed the “halfway vector disk” as a new domain for modeling specular distributions with the goal of perfect energy conservation (albedo = 1). An alternate non-conservative form is also presented for data fitting.
+    > *Edwards et al. 2006 proposed the “halfway vector disk” as a new domain for modeling specular distributions with the goal of perfect energy conservation (albedo = 1). An alternate non-conservative form is also presented for data fitting.*
 
 - **Ашихмин и Преможе 2007** [1] представили «распределение BRDF», которое сглаживает разрыв в затеняющем члене Ашихмина Ширли. Также представлен простой метод оценки зеркальных распределений из изображений обратного рассеяния (например, из одной фотографии, освещенной вспышкой).
 
-    > *Ashikhmin  and  Premože  2007  [1]  presented  the  “distribution  BRDF”  which  smooths  out  the discontinuity in the shadowing term of Ashikhmin Shirley. A simple method for estimating specular distributions from backscattering images (such as from a single flash-lit photograph) is also provided.*
+    > *Ashikhmin  and  Premože  2007  presented  the  “distribution  BRDF”  which  smooths  out  the discontinuity in the shadowing term of Ashikhmin Shirley. A simple method for estimating specular distributions from backscattering images (such as from a single flash-lit photograph) is also provided.*
 
-- Walter et al. 2007 [33] derived Smith shadowing functions for the Phong and GGX distributions and provided an approximation of Smith shadowing for the Beckmann distribution. Note: GGX is equivalent to the Trowbridge-Reitz distribution.
+- **Уолтер и др. 2007** [33] вывели функции затенения Смита для распределений Фонга и GGX и предоставили приближение затенения Смита для распределения Бекмана. Примечание: GGX эквивалентно распределению Троубриджа-Рейтца.
 
-- Romeiro et al. 2008 [26] showed than the MERL materials are well-represented by a simple bivariate form, $ρ(θ_h, θ_d)$ and exploited this fact to proposed a simplified BRDF capture method.
+    > *Walter et al. 2007 derived Smith shadowing functions for the Phong and GGX distributions and provided an approximation of Smith shadowing for the Beckmann distribution. Note: GGX is equivalent to the Trowbridge-Reitz distribution.*
 
-- Geisler-Moroder  and  Du¨r  2010  [10]  further  refined  this  model  to  restore  Helmholtz  reciprocity and guarantee energy conservation.
+- **Ромейро и др. 2008** [26] показали, что материалы MERL хорошо представлены простой двумерной формой $ρ(θ_h, θ_d)$, и использовали этот факт, чтобы предложить упрощенный метод захвата BRDF.
 
-- Kurt et al. 2010 [14] extended the Beckmann distribution to anisotropic form and proposed a new parameterized shadowing function giving control over albedo and improving fitting for some materials. Two specular lobes are suggested for fitting many of the MERL materials.
+    > *Romeiro et al. 2008 showed than the MERL materials are well-represented by a simple bivariate form, $ρ(θ_h, θ_d)$ and exploited this fact to proposed a simplified BRDF capture method.*
+
+- **Гейслер-Мородер и Дюр 2010** [10] дополнительно усовершенствовали эту модель, чтобы восстановить взаимность Гельмгольца и гарантировать сохранение энергии.
+
+    > *Geisler-Moroder  and  Dür  2010 further  refined  this  model  to  restore  Helmholtz  reciprocity and guarantee energy conservation.*
+
+- **Курт и др. 2010** [14] расширили распределение Бекмана до анизотропной формы и предложили новую параметризованную функцию затенения, дающую контроль над альбедо и улучшающую подгонку для некоторых материалов. Для подгонки многих материалов MERL предлагается использовать два зеркальных лепестка.
+
+    > *Kurt et al. 2010 extended the Beckmann distribution to anisotropic form and proposed a new parameterized shadowing function giving control over albedo and improving fitting for some materials. Two specular lobes are suggested for fitting many of the MERL materials.*
 
 - **Нишино и Ломбарди 2011** [22] предложили «полусферическое экспоненциальное распределение мощности» или «Hemi-EPD», которое имеет дополнительную степень свободы для улучшения мощности подгонки. Hemi-EPD используется в качестве основы для всего BRDF, а параметры подгоняются под отдельные $θ_d$ срезы и интерполируются. Кроме того, требуется несколько лепестков на срез $θ_d$ для многих материалов.
   
@@ -113,6 +116,17 @@ Some text with a footnote.[^1]
   
     > *Löw  et  al.   2012   proposed  a  new  “ABC”  microfacet  distribution  inspired  by  Rayleigh-Rice smooth-surface scattering theory. Additionally, the “projected deviation vector” is presented as an alternative to the half-vector parameterization for data fitting.*
 
-- Pacanowski et al. 2012 [24] developed a framework for fitting rational functions to general isotropic BRDFs over the $(θ_h, θ_d)$ domain. An anisotropic form is also proposed as a simple scaling of the isotropic form with respect to $φ_h$.
+- **Пакановски и др. 2012** [24] разработали структуру для подгонки рациональных функций к общим изотропным BRDF в области $(θ_h, θ_d)$. Анизотропная форма также предлагается как простое масштабирование изотропной формы относительно $φ_h$.
 
-- Bagher et al. 2012 [4] proposed a new “shifted gamma” or “SGD” microfacet distribution derived to fit the range of observed slopes in the MERL database. An approximation of the Smith shadowing function for the SGD is provided. Additionally, the Fresnel term is modified with a correction term providing an additional degree of freedom, improving fitting ability.
+    > *Pacanowski et al. 2012 developed a framework for fitting rational functions to general isotropic BRDFs over the $(θ_h, θ_d)$ domain. An anisotropic form is also proposed as a simple scaling of the isotropic form with respect to $φ_h$.*
+
+- **Багер и др. 2012** [4] предложили новое распределение микрограней «смещенной гаммы» или «SGD», полученное для подгонки под диапазон наблюдаемых наклонов в базе данных MERL. Приведена аппроксимация функции затенения Смита для SGD. Кроме того, член Френеля модифицирован с помощью поправочного члена, обеспечивающего дополнительную степень свободы, что улучшает подгоночную способность.
+
+    > *Bagher et al. 2012 proposed a new “shifted gamma” or “SGD” microfacet distribution derived to fit the range of observed slopes in the MERL database. An approximation of the Smith shadowing function for the SGD is provided. Additionally, the Fresnel term is modified with a correction term providing an additional degree of freedom, improving fitting ability.*
+
+<!-- Footnotes
+---------------------------
+
+Some text with a footnote.[^1]
+
+[^1]: The footnote. -->
