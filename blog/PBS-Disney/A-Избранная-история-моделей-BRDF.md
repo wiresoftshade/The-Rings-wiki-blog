@@ -68,11 +68,11 @@
 
     > *Neumann et al. 1999b proposed a process to “pump up” the albedo of arbitrary BRDFs to improve energy balance. Previous models were shown to have an albedo that falls off too quickly with incident angle (except for the Ward model which is shown to diverge at grazing incidence). Each iterative pump up divides the BRDF by a measured correction factor making the albedo progressively flatter.*
 
-- **Ашихмин, Преможе и Ширли 2000** [2] вывели функцию затенения путем численного интегрирования произвольных распределений микрограней.
+- **Ашихмин, Преможе и Ширли 2000** [^2] вывели функцию затенения путем численного интегрирования произвольных распределений микрограней.
 
     > *Ashikhmin, Premože, and Shirley 2000 derived a shadowing function from numeric integration of arbitrary microfacet distributions.*
 
-- **Ашихмин и Ширли 2000** [3] представили анизотропную модель Фонга, которая включала диффуз с весами Френеля и гарантии сохранения энергии.
+- **Ашихмин и Ширли 2000** [^3] представили анизотропную модель Фонга, которая включала диффуз с весами Френеля и гарантии сохранения энергии.
 
     > *Ashikhmin and Shirley 2000 presented a anisotropic Phong model that included a Fresnel-weighted diffuse and energy conservation guarantees.*
 
@@ -88,7 +88,7 @@
 
     > *Edwards et al. 2006 proposed the “halfway vector disk” as a new domain for modeling specular distributions with the goal of perfect energy conservation (albedo = 1). An alternate non-conservative form is also presented for data fitting.*
 
-- **Ашихмин и Преможе 2007** [1] представили «распределение BRDF», которое сглаживает разрыв в затеняющем члене Ашихмина Ширли. Также представлен простой метод оценки зеркальных распределений из изображений обратного рассеяния (например, из одной фотографии, освещенной вспышкой).
+- **Ашихмин и Преможе 2007** [^1] представили «распределение BRDF», которое сглаживает разрыв в затеняющем члене Ашихмина Ширли. Также представлен простой метод оценки зеркальных распределений из изображений обратного рассеяния (например, из одной фотографии, освещенной вспышкой).
 
     > *Ashikhmin  and  Premože  2007  presented  the  “distribution  BRDF”  which  smooths  out  the discontinuity in the shadowing term of Ashikhmin Shirley. A simple method for estimating specular distributions from backscattering images (such as from a single flash-lit photograph) is also provided.*
 
@@ -120,7 +120,7 @@
 
     > *Pacanowski et al. 2012 developed a framework for fitting rational functions to general isotropic BRDFs over the $(θ_h, θ_d)$ domain. An anisotropic form is also proposed as a simple scaling of the isotropic form with respect to $φ_h$.*
 
-- **Багер и др. 2012** [4] предложили новое распределение микрограней «смещенной гаммы» или «SGD», полученное для подгонки под диапазон наблюдаемых наклонов в базе данных MERL. Приведена аппроксимация функции затенения Смита для SGD. Кроме того, член Френеля модифицирован с помощью поправочного члена, обеспечивающего дополнительную степень свободы, что улучшает подгоночную способность.
+- **Багер и др. 2012** [^4] предложили новое распределение микрограней «смещенной гаммы» или «SGD», полученное для подгонки под диапазон наблюдаемых наклонов в базе данных MERL. Приведена аппроксимация функции затенения Смита для SGD. Кроме того, член Френеля модифицирован с помощью поправочного члена, обеспечивающего дополнительную степень свободы, что улучшает подгоночную способность.
 
     > *Bagher et al. 2012 proposed a new “shifted gamma” or “SGD” microfacet distribution derived to fit the range of observed slopes in the MERL database. An approximation of the Smith shadowing function for the SGD is provided. Additionally, the Fresnel term is modified with a correction term providing an additional degree of freedom, improving fitting ability.*
 
@@ -130,3 +130,11 @@
 Some text with a footnote.[^1]
 
 [^1]: The footnote. -->
+
+[^1]: Michael Ashikhmin. Distribution-based brdfs. Technical report, 2007.
+
+[^2]: Michael Ashikhmin, Simon Prem˘oze, and Peter Shirley.  A Microfacet-Based BRDF generator.  In Sheila Hoffmeyer, editor, Proceedings of the Computer Graphics Conference 2000 (SIGGRAPH- 00), pages 65–74, New York, July 23–28 2000. ACMPress.
+
+[^3]: Michael Ashikhmin and Peter Shirley. An anisotropic Phong BRDF model. Journal of Graphics Tools: JGT, 5(2):25–32, 2000.
+
+[^4]: M. M. Bagher, C. Soler, and N. Holzschuch. Accurate fitting of measured reflectances using a shifted gamma micro-facet distribution. Computer Graphics Forum, 31(4):1509–1518, 2012.
