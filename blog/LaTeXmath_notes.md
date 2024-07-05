@@ -4,6 +4,43 @@
 
 The more unusual symbols are not defined in base LATEX (NFSS) and require `\usepackage{amssymb}` 
 
+## 0 
+###### Founded problems and recomendations for fixing it
+
+На GitHub былозамечено, что формулы иногда не рендерятся, если добавлять пустые строки, переносы строк, пробелы.
+
+Это будет рендериться корректно:
+
+```tex
+$$
+\cos\theta_h=\sqrt{\frac{1}{1-\alpha^2}\bigg(1-\frac{\alpha^2}{(1+(\alpha-1)\xi_2)^2}\bigg)}\qquad(7)
+$$
+```
+
+$$
+\cos\theta_h=\sqrt{\frac{1}{1-\alpha^2}\bigg(1-\frac{\alpha^2}{(1+(\alpha-1)\xi_2)^2}\bigg)}\qquad(7)
+$$
+
+Это может быть не отрендерено:
+
+```tex
+$$
+\cos\theta_h=\sqrt{\frac{1} %перевод строки
+{1-\alpha^2}\bigg(1-\frac{\alpha^2} %перевод строки
+{(1+(\alpha - 1) \xi_2)^2}\bigg )}\qquad(7) %добавление пробелов
+    % добавление пустой строки
+$$
+```
+
+$$
+\cos\theta_h=\sqrt{\frac{1} 
+{1-\alpha^2}\bigg(1-\frac{\alpha^2} 
+{(1+(\alpha - 1) \xi_2)^2}\bigg )}\qquad(7) 
+
+$$
+
+Особенно подозрение на пустые строки, пробелы в таком месте как указание большого размера на символ `\bigg (` следует убрать пробел `\bigg(`. Если это буква, тогда заключить в скобки `\bigg{R}`.
+
 ## 1 GreekandHebrew letters 
 
 α `\alpha` κ `\kappa` ψ `\psi` z `\digamma` ∆ `\Delta` Θ `\Theta` β `\beta` λ `\lambda` ρ `\rho` ε `\varepsilon` Γ `\Gamma` Υ `\Upsilon` χ `\chi` µ `\mu` σ `\sigma` κ `\varkappa` Λ `\Lambda` Ξ `\Xi` δ `\delta` ν `\nu` τ `\tau` ϕ `\varphi` Ω `\Omega` ϵ `\epsilon` o `o` θ `\theta` ϖ `\varpi` Φ `\Phi` ℵ `\aleph` η `\eta` ω `\omega` υ `\upsilon` ϱ `\varrho` Π `\Pi` ℶ `\beth` γ `\gamma` φ `\phi` ξ `\xi` ς `\varsigma` Ψ `\Psi` ℸ `\daleth` ι `\iota` π `\pi` ζ `\zeta` ϑ `\vartheta` Σ `\Sigma` ג `\gimel`
