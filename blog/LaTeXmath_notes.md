@@ -7,7 +7,7 @@ The more unusual symbols are not defined in base LATEX (NFSS) and require `\usep
 ## 0 
 ###### Founded problems and recomendations for fixing it
 
-На GitHub былозамечено, что формулы иногда не рендерятся, если добавлять пустые строки, переносы строк, пробелы.
+На GitHub было замечено, что формулы не рендерятся, если добавлять пустые строки, переносы строк, пробелы.
 
 Это будет рендериться корректно:
 
@@ -25,8 +25,8 @@ $$
 
 ```tex
 $$
-\cos\theta_h=\sqrt{\frac{1} %перевод строки
-{1-\alpha^2}\bigg(1-\frac{\alpha^2} %перевод строки
+\cos\theta_h=\sqrt{\frac{1} %перенос строки
+{1-\alpha^2}\bigg(1-\frac{\alpha^2} %перенос строки
 {(1+(\alpha - 1) \xi_2)^2}\bigg )}\qquad(7) %добавление пробелов
     % добавление пустой строки
 $$
