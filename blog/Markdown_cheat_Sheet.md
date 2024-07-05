@@ -100,16 +100,6 @@ float3 RGBcolor(float r, float g, float b)
 }
 ```
 
-<code style="color : red">text</code>
-
-```
-- text in red
-+ text in green
-! text in orange
-# text in gray
-@@ text in purple (and bold)@@
-```
-
 Оповещения
 ---------------------------
 
