@@ -622,7 +622,7 @@ $$
 \cos\theta_h=\sqrt{\frac{1-(\alpha^2)^{1-\xi_2}}{1-\alpha^2}}\qquad(5)
 $$
 
-Значения $\gamma=3/2$ и $\gamma=2$ имеют упрощенные формы, причем последнее эквивалентно GTX:
+Значения $\gamma=3/2$ и $\gamma=2$ имеют упрощенные формы, причем последнее эквивалентно GGX:
 
 <font color=gray>The values of $\gamma=3/2$ and $\gamma=2$ have simplified forms, the latter being equivalent to GGX:</font>
 
@@ -698,12 +698,7 @@ $$
 $$
 
 $$
-\mathbf{h'}=\sqrt{\frac{\xi_2}{1-\xi_2}}
-[{\alpha_x\cos(2\pi\xi_1)}\mathbf{x}+
-{\alpha_y\sin(2\pi\xi_1)}\mathbf{y}]
-+\mathbf{n}
-\qquad(14)
-
+\mathbf{h'}=\sqrt{\frac{\xi_2}{1-\xi_2}}[{\alpha_x\cos(2\pi\xi_1)}\mathbf{x}+{\alpha_y\sin(2\pi\xi_1)}\mathbf{y}]+\mathbf{n}\qquad(14)
 $$
 
 $$
