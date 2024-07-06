@@ -95,15 +95,17 @@ $\vec{a}\qquad$`\vec{a}`
 
 ## 12 Text Style
 
-Monospace font: $\mathtt{ABCDEFabcdef123456}\qquad$`\mathtt{ABCDEFabcdef123456}`
+Math monospace font: $\mathtt{ABCDEFabcdef123456}\qquad$`\mathtt{ABCDEFabcdef123456}`
 
-Bold font (use for Vectors): $\mathbf{ABCDEFabcdef123456}\qquad$`\mathbf{ABCDEFabcdef123456}`
+Math bold font (use for Vectors): $\mathbf{ABCDEFabcdef123456}\qquad$`\mathbf{ABCDEFabcdef123456}`
 
-## Специальная команда указания пробела
+## 12.1 Text spaces
 
-`\quad` - это пробел, равный текущему размеру шрифта. Так, если вы используете шрифт размером 11pt, то пространство, предоставляемое `\quad`, также будет равно 11pt (по горизонтали, конечно). `\qquad` дает вдвое больше.
+`\quad` - это пробел, равный текущему размеру шрифта. Так, если вы используете шрифт размером 11pt, то пространство, предоставляемое `\quad`, также будет равно 11pt (по горизонтали, конечно). 
 
-В этой ситуации `\quad` было бы излишним - в данном случае нужны небольшие пробелы
+`\qquad` дает вдвое больше.
+
+В иной ситуации `\quad` было бы излишним - в данном случае нужны небольшие пробелы
 
 `\,`	small space	 3/18 of a quad
 
