@@ -1,4 +1,4 @@
-## А Избранная история моделей BRDF, используемых в графике
+## А Избранная история моделей BRDF, используемых в графике
 
 - **Бекманн 1963** [^5]: предложил модель рассеяния от шероховатых поверхностей, основанную на гауссовом распределении уклонов поверхности. 
     
@@ -12,7 +12,7 @@
   
     > *Smith 1967 derived a shadowing function from the microfacet distribution. Notably, this shadowing function varied with surface roughness.*
 
-- **Phong 1975** [^25]: предложил вычислительно простую модель зеркального блика с использованием экспоненциированного косинуса.
+- **Фонг 1975** [^25]: предложил вычислительно простую модель зеркального блика с использованием экспоненциированного косинуса.
 
     > *Phong 1975 proposed a computationally simple model of a specular highlight using an exponentiated cosine.*
 
