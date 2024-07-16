@@ -1,8 +1,14 @@
 # The Ring wiki
 
-wiki/blog of The Ring project
+*wiki/blog of The Ring project*
+
+## Wiki
 
 [Терминология проекта](wiki/Терминология.md)
+
+## Blog
+
+[16 июля 2024 г. Сегодня загружаю первую орбитальную станцию. Модель](blog/1607_station_worknotes.md)
 
 [Освещение и затенение планет. Часть 1](wiki/Освещение-и-затенение-планет-Часть-1.md)
 
