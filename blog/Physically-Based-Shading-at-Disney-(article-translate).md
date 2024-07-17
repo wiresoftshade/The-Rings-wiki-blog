@@ -592,7 +592,7 @@ $$F_{\text{Schlick}} = F_0 + (1 − F_0)(1 − \cos θ_d)^5$$
 
 Правдоподобное распределение микрограней должно быть нормализовано по полусфере таким образом, чтобы проецируемая площадь микрограней была равна 1 [^33]:
 
-<font color=gray>A plausible microfacet distribution must be normalized over the hemisphere such that the projected area of the microfacets is 1 [33]:</font>
+<font color=gray>A plausible microfacet distribution must be normalized over the hemisphere such that the projected area of the microfacets is 1 [^33]:</font>
 
 $$
 \int_{\Omega}D(\theta_h)\cos\theta_hd\omega=1
@@ -816,7 +816,7 @@ $$ \alpha_y=roughness^2\times{aspect} $$
 Для прозрачного покрытия мы по-прежнему используем изотропный лепесток GTR 1.0 с более широким хвостом и, по общему признанию, случайным фактором $G$. Это не означает, что это физически правдоподобная поверхность микрограней с соответствующим затенением и маскированием, а скорее представляет собой тонкий полупрозрачный слой, который может охватывать множественные события отражения и пропускания, и наша текущая формулировка хорошо зарекомендовала себя для большого количества материалов. Тем не менее, физическая модель, охватывающая все эти эффекты, была бы кстати.
 
 <font color=gray>
-Heitz recently published a thorough analysis of the microfacet shadowing function, *Understanding the Masking-Shadowing Function in Microfacet-Based BRDFs*, JCGT 2014. Heitz proposed the “weak white furnace test” for verifying the plausibility of physically based masking functions and showed that, of known shadowing functions, only the Smith shadowing model [29], [33] and the V-cavity model [7] are plausible, though the latter may be less realistic.
+Heitz recently published a thorough analysis of the microfacet shadowing function, *Understanding the Masking-Shadowing Function in Microfacet-Based BRDFs*, JCGT 2014. Heitz proposed the “weak white furnace test” for verifying the plausibility of physically based masking functions and showed that, of known shadowing functions, only the Smith shadowing model [^29], [^33] and the V-cavity model [^7] are plausible, though the latter may be less realistic.
 Based on Heitz’ analysis, we have eliminated our ad-hoc remapping of Smith $G$ for our primary specular. For metals, the result is obviously better, and for general materials it is arguably so, especially when rendering in a full GI environment with plausible light sources. It seems very likely that the lack of correlation of the Walter model to the smooth materials was a result of measurement error in the MERL data at grazing angles. Heitz also derived the correct anisotropic form of the Smith shadowing, a detail we had neglected.
 For clearcoat, we still use the isotropic GTR 1.0 lobe with the wider tail and the admittedly ad-hoc $G$ factor. This is not meant to represent a physically plausible microfacet surface with corresponding shadowing and masking, but rather it is representing a thin, translucent layer that may encompass multiple reflection and transmission events, and our current formulation has worked well for a large variety of materials. That said, a physical model that encompassed all of these effects would be welcome.</font>
 
