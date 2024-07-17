@@ -121,3 +121,27 @@
 Рисунок 15: Аномалии в данных MERL. Слева направо: реакция _стали_ на точечный свет демонстрирует асимметричный блик, график _рисунка-цветового-измененеия-1_, показывает экстраполированные данные о скольжении (видимые во всех материалах), _белая-ткань_ демонстрирует затенение вблизи скольжения, указывающее на морщину, а _древесина-фруктов-241_ (показанная как сохраненная, в искривленном пространстве $θ_h$) демонстрирует зеркальные вариации, указывающие на древесные волокна.
 
 Это не критика данных или процесса захвата, а скорее просто предостережение не переобучать или не переинтерпретировать данные. Это также потенциально часть ответа на вопрос, заданный ранее, о том, почему некоторые материалы трудно подгонять.
+
+[^4]: М. М. Багер, К. Солер и Н. Хольцшух. Точная подгонка измеренных отражательных способностей с использованием смещенного гамма-микрогранного распределения. *Форум компьютерной графики*, 31(4):1509–1518, 2012. / M. M. Bagher, C. Soler, and N. Holzschuch. Accurate fitting of measured reflectances using a shifted gamma micro-facet distribution. *Computer Graphics Forum*, 31(4):1509–1518, 2012.
+
+[^8]: Арне Дюр. Улучшенная нормализация для модели отражения Уорда. *Журнал графики, графических процессоров и игровых инструментов*, 11(1):51–59, 2006. / Arne Dür. An improved normalization for the Ward reflectance model. *Journal of graphics, gpu, and game tools*, 11(1):51–59, 2006.
+
+[^9]: Дэйв Эдвардс, Соломон Булос, Джаред Джонсон, Питер Ширли, Майкл Ашихмин, Майкл Старк и Крис Уайман. Диск вектора полпути для моделирования brdf. *ACM Trans. Graph.*, 25(1):1–18, январь 2006 г. / Dave Edwards, Solomon Boulos, Jared Johnson, Peter Shirley, Michael Ashikhmin, Michael Stark, and Chris Wyman. The halfway vector disk for brdf modeling. *ACM Trans. Graph.*, 25(1):1–18, January 2006.
+
+[^10]: Дэвид Гейслер-Мородер и Арне Дюр. Новая BRDF модель Уорда с ограниченным альбедо. *Форум Компьют. Граф.*, 29(4):1391–1398, 2010. / David Geisler-Moroder and Arne Dür. A new Ward BRDF model with bounded albedo. *Comput. Graph. Forum*, 29(4):1391–1398, 2010.
+
+[^14]: Мурат Курт, Ласло Ширмай-Калос и Ярослав Кршиванек. Анизотропная модель BRDF для подгонки и рендеринга Монте-Карло. *SIGGRAPH Компьют. График.*, 44(1):3:1–3:15, февраль 2010 г. / Murat Kurt, László Szirmay-Kalos, and Jaroslav Kŕivánek. An anisotropic brdf model for fitting and monte carlo rendering. *SIGGRAPH Comput. Graph.*, 44(1):3:1–3:15, February 2010.
+
+[^17]: Йоаким Лёв, Йоэль Кронандер, Андерс Иннерман и Йонас Унгер. Модели Brdf для точного и эффективного рендеринга глянцевых поверхностей. *ACM Trans. Graph.*, 31(1):9:1–9:14, февраль 2012 г. / Joakim Löw, Joel Kronander, Anders Ynnerman, and Jonas Unger. Brdf models for accurate and efficient rendering of glossy surfaces. *ACM Trans. Graph.*, 31(1):9:1–9:14, February 2012.
+
+[^19]: Ласло Нойманн, Аттила Нойманн и Ласло Ширмай-Калос. Компактные модели с металлическим отражением. *Форум компьютерной графики*, 18(3):161–172, сентябрь 1999 г. ISSN 1067-7055. / László Neumann, Attila Neumann, and László Szirmay-Kalos. Compact metallic reflectance models. *Computer Graphics Forum*, 18(3):161–172, September 1999. ISSN 1067-7055.
+
+[^20]: Ласло Нойманн, Аттила Нойманн и Ласло Ширмай-Калос. Модели отражения с помощью накачки функции альбедо. В **Machine Graphics and Vision*, страницы 3–18, 1999. / László Neumann, Attila Neumann, and László Szirmay-Kalos. Reflectance models by pumping up the albedo function. In *Machine Graphics and Vision*, pages 3–18, 1999.
+
+[^21]: Эдди Нган, Фредо Дюран и Войцех Матусик. Экспериментальный анализ моделей BRDF. В работе Кавиты Балы и Филиппа Дютре, редакторов, *Eurographics Symposium on Rendering*, страницы 117–126, Констанц, Германия, 2005. Ассоциация Eurographics. / Addy Ngan, Frédo Durand, and Wojciech Matusik. Experimental analysis of BRDF models. In Kavita Bala and Philip Dutré, editors, *Eurographics Symposium on Rendering*, pages 117–126, Konstanz, Germany, 2005. Eurographics Association.
+
+[^29]: Б. Смит. Геометрическое затенение случайной шероховатой поверхности. *IEEE Trans. Ant. and Propagation*, AP-15(5):668–671, сентябрь 1967 г. / B. Smith. Geometrical shadowing of a random rough surface. *IEEE Trans. Ant. and Propagation*, AP-15(5):668–671, September 1967.
+
+[^30]: К. Торранс и Э. Спарроу. Теория незеркального отражения от шероховатых поверхностей. *Журн. Оптического общ. Америки*, 57:1105–1114, 1967 г. / K. Torrance and E. Sparrow. Theory for off-specular reflection from roughened surfaces. *J. Optical Soc. America*, 57:1105–1114, 1967.
+
+[^33]: Брюс Уолтер, Стивен Р. Маршнер, Хонгсонг Ли и Кеннет Э. Торранс. Модели микрограней для преломления через шероховатые поверхности. *В трудах симпозиума Eurographics по рендерингу*, 2007. / Bruce Walter, Stephen R. Marschner, Hongsong Li, and Kenneth E. Torrance. Microfacet models for refraction through rough surfaces. In *Proceedings of the Eurographics Symposium on Rendering*, 2007.
