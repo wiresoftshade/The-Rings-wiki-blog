@@ -2,17 +2,13 @@
 
 *wiki/blog of The Ring project*
 
-## Wiki
+## [Wiki](https://github.com/wiresoftshade/The-Ring-wiki-blog/tree/main/wiki)
 
-[Терминология проекта](wiki/Терминология.md)
+Чтобы не забыть важные составляющие проекта создал wiki. Начал с [терминологии проекта](wiki/Терминология.md)
 
-## Blog
+## [Blog](https://github.com/wiresoftshade/The-Ring-wiki-blog/tree/main/blog)
 
-[16 июля 2024 г. Сегодня загружаю первую орбитальную станцию. Модель](blog/1607_station_worknotes.md)
-
-[Освещение и затенение планет. Часть 1](wiki/Освещение-и-затенение-планет-Часть-1.md)
-
-[Освещение и затенение планет. Часть 2](wiki/Освещение-и-затенение-планет-Часть-2.md)
+Здесь я описываю процесс разработки. Пытаюсь выразить свое настроение от накопленного опыта. Отсюда дельные вещи и понятия уходят в wiki.
 
 ## Дополнительные материалы
 
@@ -20,7 +16,7 @@
 
 [LATEX Mathematical Symbols](/blog/LaTeXmath_notes.md)
 
-[LATEX Mathematical Symbols *pdf*](/wiki/books/LaTeX_symbols.pdf)
+[LATEX Mathematical Symbols *pdf*](/blog/additional/LaTeX_symbols.pdf)
 
 [Markdown cheat Sheet](/blog/Markdown_cheat_Sheet.md)
 
