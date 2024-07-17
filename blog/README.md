@@ -22,7 +22,7 @@
 
 _Брент Берли, Студия анимации Уолта Диснея_ 
 
-[Перевод статьи, разбитый по главам](./PBS-Disney/Physically-Based-Shading-at-Disney-Titles-(article-translate).md) 
+[Перевод статьи, разбитый по главам](./PBS-Disney/README.md) 
 
 Для печати: [Текст](/blog/PBS-Disney/Physically-Based-Shading-at-Disney-(article-translate).md), [Только картинки](/blog/PBS-Disney/Изображения.md), [Eng *pdf*](/books/s2012_pbs_disney_brdf_notes_v3.pdf)
 
