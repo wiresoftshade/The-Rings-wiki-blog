@@ -28,9 +28,12 @@ float rcpFast( float x )
 
 // [ Chan 2018, "Material Advances in Call of Duty: WWII" ]
 // It has been extended here to fade out retro reflectivity contribution from area light in order to avoid visual artefacts.
+// Здесь он был расширен для устранения влияния ретрорефлекторного отражения от освещенности области с целью предотвращения визуальных артефактов.
 float3 Diffuse_Chan( float3 DiffuseColor, float a2, float NoV, float NoL, float VoH, float NoH, float RetroReflectivityWeight)
 {
 	// We saturate each input to avoid out of range negative values which would result in weird darkening at the edge of meshes (resulting from tangent space interpolation).
+	// Мы насыщаем каждый вход, чтобы избежать отрицательных значений, выходящих за пределы диапазона, 
+	// которые могут привести к странному затемнению на краях сеток (в результате интерполяции касательного пространства).
 	NoV = saturate(NoV);
 	NoL = saturate(NoL);
 	VoH = saturate(VoH);
@@ -44,11 +47,14 @@ float3 Diffuse_Chan( float3 DiffuseColor, float a2, float NoV, float NoL, float 
 	float FdL = 1 - 0.75 * Pow5( 1 - NoL );
 
 	// Rough (F0) to smooth (FdV * FdL) response interpolation
+	// Интерполяция отклика от грубого (F0) до гладкого (FdV * FdL)
 	float Fd = lerp( F0, FdV * FdL, saturate( 2.2 * g - 0.5 ) );
 
 	// Retro reflectivity contribution.
+	// Вклад ретроотражательной способности.
 	float Fb = ( (34.5 * g - 59 ) * g + 24.5 ) * VoH * exp2( -max( 73.2 * g - 21.2, 8.9 ) * sqrtFast( NoH ) );
 	// It fades out when lights become area lights in order to avoid visual artefacts.
+	// Он затухает, когда источники света становятся протяженным, чтобы избежать визуальных артефактов.
 	Fb *= RetroReflectivityWeight;
 	
 	return DiffuseColor * ( (1 / PI) * ( Fd + Fb ) );
