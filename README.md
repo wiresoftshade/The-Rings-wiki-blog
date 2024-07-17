@@ -34,7 +34,7 @@ _Брент Берли, Студия анимации Уолта Диснея_
 
 Эмиль Праун, Хьюз Хоппе, Мэтью Уэбб, Адам Финкельштейн
 
-[перевод статьи](blog/Real-Time-Hatching-(article-translate).md)
+[перевод статьи](blog/Real-Time-Hatching-(article-translate).md), [Eng *pdf*](/books/Real%20Time%20Hatching.pdf)
 
 ### Движение по орбитам
 
