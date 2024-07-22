@@ -10,6 +10,8 @@
 
 [20 октября 2023 г. Визуальный Стиль. Ощущение](/blog/20Oct2023_worknotes.md)
 
+[12 июля 2023 г. Global. Наработки для колец и камней в v-ray (SSS)](/blog/12Jul2023_worknotes.md)
+
 ## Дополнительные материалы
 
 [LATEX Mathematical Symbols](/blog/LaTeXmath_notes.md)
