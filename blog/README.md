@@ -12,6 +12,8 @@
 
 [12 июля 2023 г. Global. Наработки для колец и камней в v-ray (SSS)](/blog/12Jul2023_worknotes.md)
 
+[12 июля 2023 г. Про кораблик. Моделька, anims, jets](/blog/12Jul2023_2_worknotes.md)
+
 ## Дополнительные материалы
 
 [LATEX Mathematical Symbols](/blog/LaTeXmath_notes.md)
