@@ -1,0 +1,93 @@
+The project could not be compiled. Would you like to open it in Visual Studio 2022?
+
+Running C:/Epic Games/UE_5.4/Engine/Build/BatchFiles/Build.bat Development Win64 -Project="C:/UProj/asteroids 5.4/TheAsteroids.uproject" -TargetType=Editor -Progress -NoEngineChanges -NoHotReloadFromIDE
+Using bundled DotNet SDK version: 6.0.302
+Running UnrealBuildTool: dotnet "..\..\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" Development Win64 -Project="C:/UProj/asteroids 5.4/TheAsteroids.uproject" -TargetType=Editor -Progress -NoEngineChanges -NoHotReloadFromIDE
+Log file: C:\Users\Dmitry Borisov\AppData\Local\UnrealBuildTool\Log.txt
+Using 'git status' to determine working set for adaptive non-unity build (C:\Epic Games\UE_5.4).
+Using 'git status' to determine working set for adaptive non-unity build (C:\UProj\asteroids 5.4).
+Creating makefile for TheAsteroidsEditor (no existing makefile)
+Total execution time: 0.83 seconds
+Could not find definition for module 'TheAsteroidsEd', (referenced via TheAsteroidsEditor.Target.cs)
+
+====================================================
+Build started at 2:58...
+1>------ Skipped Build: Project: UE5, Configuration: BuiltWithUnrealBuildTool Win64 ------
+1>Project not selected to build for this solution configuration 
+2>------ Build started: Project: TheAsteroids, Configuration: Development_Editor x64 ------
+2>Using bundled DotNet SDK version: 6.0.302
+2>Running UnrealBuildTool: dotnet "..\..\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" TheAsteroidsEditor Win64 Development -Project="C:\UProj\asteroids 5.4\TheAsteroids.uproject" -WaitMutex -FromMsBuild -architecture=x64
+2>Log file: C:\Users\Dmitry Borisov\AppData\Local\UnrealBuildTool\Log.txt
+2>Using 'git status' to determine working set for adaptive non-unity build (C:\Epic Games\UE_5.4).
+2>Using 'git status' to determine working set for adaptive non-unity build (C:\UProj\asteroids 5.4).
+2>Creating makefile for TheAsteroidsEditor (no existing makefile)
+2>Parsing headers for TheAsteroidsEditor
+2>  Running Internal UnrealHeaderTool "C:\UProj\asteroids 5.4\TheAsteroids.uproject" "C:\UProj\asteroids 5.4\Intermediate\Build\Win64\TheAsteroidsEditor\Development\TheAsteroidsEditor.uhtmanifest" -WarningsAsErrors -installed
+2>Total of 10 written
+2>Reflection code generated for TheAsteroidsEditor in 1.2866861 seconds
+2>Total execution time: 5.45 seconds
+2>Unable to build while Live Coding is active. Exit the editor and game, or press Ctrl+Alt+F11 if iterating on code in the editor or game
+2>C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.MakeFile.Targets(44,5): error MSB3073: The command ""C:\Epic Games\UE_5.4\Engine\Build\BatchFiles\Build.bat" TheAsteroidsEditor Win64 Development -Project="C:\UProj\asteroids 5.4\TheAsteroids.uproject" -WaitMutex -FromMsBuild -architecture=x64" exited with code 6.
+2>Done building project "TheAsteroids.vcxproj" -- FAILED.
+========== Build: 0 succeeded, 1 failed, 0 up-to-date, 1 skipped ==========
+========== Build completed at 2:58 and took 07.566 seconds ==========
+
+=============================================================
+Build started at 3:14...
+1>------ Skipped Build: Project: UE5, Configuration: BuiltWithUnrealBuildTool Win64 ------
+1>Project not selected to build for this solution configuration 
+2>------ Build started: Project: TheAsteroids, Configuration: Development_Editor x64 ------
+2>Using bundled DotNet SDK version: 6.0.302
+2>Running UnrealBuildTool: dotnet "..\..\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" TheAsteroidsEditor Win64 Development -Project="C:\UProj\asteroids 5.4\TheAsteroids.uproject" -WaitMutex -FromMsBuild -architecture=x64
+2>Log file: C:\Users\Dmitry Borisov\AppData\Local\UnrealBuildTool\Log.txt
+2>Using 'git status' to determine working set for adaptive non-unity build (C:\Epic Games\UE_5.4).
+2>Invalidating makefile for TheAsteroidsEditor (TheAsteroidsEditor.Target.cs modified)
+2>Building TheAsteroidsEditor...
+2>Using Visual Studio 2022 14.38.33141 toolchain (C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130) and Windows 10.0.26100.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+2>Determining max actions to execute in parallel (6 physical cores, 12 logical cores)
+2>  Executing up to 6 processes, one per physical core
+2>Using XGE executor to run 15 action(s)
+2>Distributing 15 actions to XGE
+2>UnrealBuildTool Compile
+2>
+2>--------------------Build System Warning---------------------------------------
+2>License not activated:
+2>    License is not activated. Please activate the license in the coordinator.
+2>    This build will run in standalone mode.
+2>
+2>-------------------------------------------------------------------------------
+2>
+2>Build ID: {33FC4D02-2634-45E8-948C-CE6B7C519B34}
+2>
+2>--------------------Project: Default-------------------------------------------
+2>[1/15] Resource Default.rc2 (0:00.06 at +0:00)
+2>[2/15] Compile [x64] SharedPCH.UnrealEd.Project.ValApi.Cpp17.cpp (0:29.78 at +0:00)
+2>[3/15] Compile [x64] TheAsteroids.cpp (0:00.78 at +0:29)
+2>[4/15] Compile [x64] TheAsteroids.init.gen.cpp (0:00.79 at +0:29)
+2>[5/15] Compile [x64] OrbitData.cpp (0:00.85 at +0:29)
+2>[6/15] Compile [x64] OrbitPars.cpp (0:00.87 at +0:29)
+2>[7/15] Compile [x64] OrbitParameters.cpp (0:00.89 at +0:29)
+2>[8/15] Compile [x64] OrbitParameters.gen.cpp (0:01.00 at +0:29)
+2>[9/15] Compile [x64] OrbitSolver.gen.cpp (0:01.01 at +0:29)
+2>[10/15] Compile [x64] OrbitPars.gen.cpp (0:01.03 at +0:29)
+2>[11/15] Compile [x64] OrbitSolver.cpp (0:01.09 at +0:29)
+2>[12/15] Compile [x64] OrbitData.gen.cpp (0:01.12 at +0:29)
+2>[13/15] Link [x64] UnrealEditor-TheAsteroids.lib (0:00.07 at +0:30)
+2>C:\UProj\asteroids 5.4\Source\TheAsteroids\Public\OrbitSolver.h(122): warning C4996: 'UKismetTextLibrary::Conv_FloatToText': This method has been deprecated and will be removed. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+2>[14/15] Link [x64] UnrealEditor-TheAsteroids.dll (0:00.64 at +0:30)
+2>[15/15] WriteMetadata TheAsteroidsEditor.target (0:00.23 at +0:31)
+2>C:\UProj\asteroids 5.4\Source\TheAsteroids\Public\OrbitSolver.h(122): warning C4996: 'UKismetTextLibrary::Conv_FloatToText': This method has been deprecated and will be removed. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+2>   Creating library C:\UProj\asteroids 5.4\Intermediate\Build\Win64\x64\UnrealEditor\Development\TheAsteroids\UnrealEditor-TheAsteroids.lib and object C:\UProj\asteroids 5.4\Intermediate\Build\Win64\x64\UnrealEditor\Development\TheAsteroids\UnrealEditor-TheAsteroids.exp
+2>   Creating library C:\UProj\asteroids 5.4\Intermediate\Build\Win64\x64\UnrealEditor\Development\TheAsteroids\UnrealEditor-TheAsteroids.sup.lib and object C:\UProj\asteroids 5.4\Intermediate\Build\Win64\x64\UnrealEditor\Development\TheAsteroids\UnrealEditor-TheAsteroids.sup.exp
+2>---------------------- Done ----------------------
+2>
+2>    Rebuild All: 1 succeeded, 0 failed, 0 skipped
+2>
+2>1 build system warning(s):
+2>   - License not activated
+2>
+2>Total time in XGE executor: 32.01 seconds
+2>Total execution time: 35.68 seconds
+2>Done building project "TheAsteroids.vcxproj".
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 1 skipped ==========
+========== Build completed at 3:14 and took 36.932 seconds ==========

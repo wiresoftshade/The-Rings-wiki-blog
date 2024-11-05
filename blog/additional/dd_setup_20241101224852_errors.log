@@ -1,0 +1,25 @@
+Во время установки произошла ошибка.
+
+Для устранения ошибок, связанных с пакетом, попробуйте сделать следующее.
+
+    1. Найдите способы решения ошибок с помощью URL-адресов, указанных под каждым сообщением об ошибке.
+    2. Измените выбранные рабочие нагрузки или компоненты и повторите установку.
+    3. Удалите продукт с вашего компьютера и повторите установку.
+
+Если эта ошибка была описана в Сообществе разработчиков, вы можете найти способы решения или обхода ошибки в этом сообществе. Если эта ошибка не описана в сообществе, просим вас сообщить о ней, чтобы разработчики могли найти решения или способы обхода ошибки. Чтобы сообщить о проблеме, нажмите кнопку "Оставить отзыв" в правом верхнем углу Visual Studio Installer.
+
+================================================================================
+
+Не удалось восстановить пакет "UnrealEngineV1,version=1.3.93.0".
+    URL-адрес поиска
+        https://aka.ms/VSSetupErrorReports?q=PackageId=UnrealEngineV1;PackageAction=Repair;ReturnCode=1603
+    Сведения
+        MSI: C:\ProgramData\Microsoft\VisualStudio\Packages\UnrealEngineV1,version=1.3.93.0\packages\UnrealEngineV1\EpicGameLauncher.msi, свойства:  REBOOT=ReallySuppress  INSTALLDIR="C:\Program Files (x86)\Epic Games"  REINSTALL=ALL  REINSTALLMODE="cmuse" IGNOREDEPENDENCIES=ALL 
+        Код возврата: 1603
+        Сведения о коде возврата: Fatal error during installation.
+    Журнал
+        C:\Users\Dmitry Borisov\AppData\Local\Temp\dd_setup_20241101224852_588_UnrealEngineV1.log
+    Затронутые рабочие нагрузки
+        Разработка игр на C++ (Microsoft.VisualStudio.Workload.NativeGame,version=17.11.35102.94,productarch=x64)
+    Затронутые компоненты
+        Установщик Unreal Engine (Component.Unreal,version=17.11.35102.94)
