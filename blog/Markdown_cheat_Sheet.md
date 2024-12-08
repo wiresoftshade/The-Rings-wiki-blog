@@ -105,17 +105,42 @@ float3 RGBcolor(float r, float g, float b)
 
 Оповещения — это расширение Markdown на основе синтаксиса blockquote, который можно использовать для выделения критически важных сведений. На GitHub они отображаются с отличительными цветами и значками, чтобы указать важность содержимого.
 
+```
 > [!NOTE]
 > Useful information that users should know, even when skimming content.
+```
+
+> [!NOTE]
+> Useful information that users should know, even when skimming content.
+
+```
+> [!TIP]
+> Helpful advice for doing things better or more easily.
+```
 
 > [!TIP]
 > Helpful advice for doing things better or more easily.
 
+```
+> [!IMPORTANT]
+> Key information users need to know to achieve their goal.
+```
+
 > [!IMPORTANT]
 > Key information users need to know to achieve their goal.
 
+```
 > [!WARNING]
 > Urgent info that needs immediate user attention to avoid problems.
+```
+
+> [!WARNING]
+> Urgent info that needs immediate user attention to avoid problems.
+
+```
+> [!CAUTION]
+> Advises about risks or negative outcomes of certain actions.
+```
 
 > [!CAUTION]
 > Advises about risks or negative outcomes of certain actions.
