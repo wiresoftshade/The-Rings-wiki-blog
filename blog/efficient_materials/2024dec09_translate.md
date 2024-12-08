@@ -47,7 +47,7 @@ which offers even more robust precision, but is also heavier in terms of perform
 
 Таким образом, в этом руководстве показано, как можно реструктурировать расчеты положения в материалах для повышения точности и скорости.
 
-### [!NOTE]
+> ### !Info
 > Materials that follow the guidelines in this document are generally cheaper, regardless of where in worldspace they are used. Moreover, content may be reused or change in unexpected ways, so building robust materials now reduces additional work later.
 
 Материалы, которые следуют рекомендациям этого документа, как правило, дешевле, независимо от того, где в мировом пространстве они используются. Более того, контент может быть повторно использован или изменен неожиданным образом, поэтому создание надежных материалов сейчас сокращает дополнительную работу позже.
@@ -93,7 +93,7 @@ which offers even more robust precision, but is also heavier in terms of perform
 - Camera Position
 - Transform Position (\* to Absolute World Space)
 
-### [!NOTE]
+> ### !Info
 > TransformVector is not on this list, because LWC types are not used for calculations involving directionsrather than positions.
 
 TransformVector отсутствует в этом списке, поскольку типы LWC не используются для вычислений, включающих направления, а не позиции.
