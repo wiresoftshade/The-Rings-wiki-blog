@@ -1,6 +1,6 @@
 # LATEX Mathematical Symbols 
 
-[A Source full docement in PDF](./additional/LaTeX_symbols.pdf)
+[A Source full docement in PDF](additional/LaTeX_symbols.pdf)
 
 The more unusual symbols are not defined in base LATEX (NFSS) and require `\usepackage{amssymb}` 
 

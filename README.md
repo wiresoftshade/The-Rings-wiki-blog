@@ -20,9 +20,9 @@
 
 [LATEX Mathematical Symbols](/blog/LaTeXmath_notes.md)
 
-[LATEX Mathematical Symbols *pdf*](/blog/additional/LaTeX_symbols.pdf)
+[LATEX Mathematical Symbols *pdf*](/blog/2024/additional/LaTeX_symbols.pdf)
 
-[Markdown cheat Sheet](/blog/Markdown_cheat_Sheet.md)
+[Markdown cheat Sheet](/blog/2024/Markdown_cheat_Sheet.md)
 
 ## Статьи
 
@@ -32,17 +32,17 @@ _Брент Берли, Студия анимации Уолта Диснея_
 
 [Перевод статьи, разбитый по главам](blog/PBS-Disney/README.md) 
 
-Для печати: [Текст](/blog/PBS-Disney/Physically-Based-Shading-at-Disney-Print(article-translate).md), [Только картинки](/blog/PBS-Disney/Изображения.md), [Eng *pdf*](/books/s2012_pbs_disney_brdf_notes_v3.pdf)
+Для печати: [Текст](/blog/2024/PBS-Disney/Physically-Based-Shading-at-Disney-Print(article-translate).md), [Только картинки](/blog/2024/PBS-Disney/Изображения.md), [Eng *pdf*](/books/s2012_pbs_disney_brdf_notes_v3.pdf)
 
 ### Штриховка в реальном времени
 
 Эмиль Праун, Хьюз Хоппе, Мэтью Уэбб, Адам Финкельштейн
 
-[перевод статьи](blog/Real-Time-Hatching-(article-translate).md), [Eng *pdf*](/books/Real%20Time%20Hatching.pdf)
+[перевод статьи](blog/2024/Real-Time-Hatching-(article-translate).md), [Eng *pdf*](/books/Real%20Time%20Hatching.pdf)
 
 ### Движение по орбитам
 
 А. Рой
 
-[Выписки из книги](blog/А.Рой-Движение-по-орбитам.md)
+[Выписки из книги](blog/2024/А.Рой-Движение-по-орбитам.md)
 
