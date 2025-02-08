@@ -18,7 +18,7 @@
 
 [Астраномические символы](wiki/Астраномические-символы.md)
 
-[LATEX Mathematical Symbols](/blog/LaTeXmath_notes.md)
+[LATEX Mathematical Symbols](/blog/2024/LaTeXmath_notes.md)
 
 [LATEX Mathematical Symbols *pdf*](/blog/2024/additional/LaTeX_symbols.pdf)
 
@@ -30,7 +30,7 @@
 
 _Брент Берли, Студия анимации Уолта Диснея_ 
 
-[Перевод статьи, разбитый по главам](blog/PBS-Disney/README.md) 
+[Перевод статьи, разбитый по главам](blog/2024/PBS-Disney/README.md) 
 
 Для печати: [Текст](/blog/2024/PBS-Disney/Physically-Based-Shading-at-Disney-Print(article-translate).md), [Только картинки](/blog/2024/PBS-Disney/Изображения.md), [Eng *pdf*](/books/s2012_pbs_disney_brdf_notes_v3.pdf)
 
