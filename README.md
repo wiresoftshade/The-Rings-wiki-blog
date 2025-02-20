@@ -2,15 +2,15 @@
 
 *wiki/blog of The Ring project*
 
-## [Wiki](https://github.com/wiresoftshade/The-Ring-wiki-blog/tree/main/wiki)
+## [Wiki](https://github.com/wiresoftshade/The-Rings-wiki-blog/tree/main/wiki)
 
 Чтобы не забыть важные составляющие проекта создал wiki. Начал с [терминологии проекта](wiki/Терминология.md)
 
-## [Blog](https://github.com/wiresoftshade/The-Ring-wiki-blog/tree/main/blog)
+## [Blog](https://github.com/wiresoftshade/The-Rings-wiki-blog/tree/main/blog)
 
 Здесь я описываю процесс разработки. Пытаюсь выразить свое настроение от накопленного опыта. Отсюда дельные вещи и понятия уходят в wiki.
 
-## [Books](https://github.com/wiresoftshade/The-Ring-wiki-blog/tree/main/books)
+## [Books](https://github.com/wiresoftshade/The-Rings-wiki-blog/tree/main/books)
 
 Сборник некоторых книг и статей на тему рендеринга 3д графики
 
