@@ -2,6 +2,8 @@
 
 Здесь я описываю процесс разработки. Пытаюсь выразить свое настроение от накопленного опыта. Отсюда дельные вещи и понятия уходят в [wiki](https://github.com/wiresoftshade/The-Rings-wiki-blog/tree/main/wiki).
 
+28 февраля 2025 г. [Решил спросить у YaGPT как мне реализовать Pool объектов](2025/28feb2025_PoolObjectsFromGPT.md)
+
 8 февраля 2025 г. [План видосов по мини-проекту Digital Tape Recorder](2025/08feb2025_DTRnotes.md)
 
 ### 2024 г.
