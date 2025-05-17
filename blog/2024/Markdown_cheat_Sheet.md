@@ -189,3 +189,6 @@ $$
 \Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.
 $$
 
+[LaTeX math notes](LaTeXmath_notes.md)
+
+[LaTeX symbols (PDF)](additional/LaTeX_symbols.pdf)
