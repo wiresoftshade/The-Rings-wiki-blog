@@ -5,7 +5,7 @@
 ### TEAC DTR Type 4. Unreal Engine, Blueprints. 
 # Часть 1А/6. Процедурная анимация катушек с лентой 
 
-**Снято**
+**Снято with english subtitles** 
 
 <!-- https://youtu.be/MaK8Z5M4OE4 -->
 

@@ -5,7 +5,7 @@
 ### TEAC DTR Type 4. Unreal Engine, Blueprints. 
 # Часть 0/6. Демонстрация работы
 
-**Снято**
+**Снято with english subtitles** 
 
 <!-- https://youtu.be/yau3plHyeaQ -->
 
