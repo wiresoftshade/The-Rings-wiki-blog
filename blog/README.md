@@ -2,6 +2,8 @@
 
 Здесь я описываю процесс разработки. Пытаюсь выразить свое настроение от накопленного опыта. Отсюда дельные вещи и понятия уходят в [wiki](https://github.com/wiresoftshade/The-Rings-wiki-blog/tree/main/wiki).
 
+26 июля 2025 г. [Часть 1Б/6. Процедурная анимация катушек с лентой.](2025/26jul2025_DTRnotesPart1B.md) TEAC DTR Type 4. Unreal Engine, Blueprints.
+
 14 апреля 2025 г. [Часть 1А/6. Процедурная анимация катушек с лентой.](2025/22jun2025_DTRnotesPart1.md) TEAC DTR Type 4. Unreal Engine, Blueprints.
 
 3 мая 2025 г. [Часть 0/6. Демонстрация работы.](2025/03may2025_DTRnotesPart0.md) TEAC DTR Type 4. Unreal Engine, Blueprints.
