@@ -32,6 +32,12 @@
 
 ## Статьи
 
+### Game Physics
+
+_Glenn Fiedler_, Цикл Статей
+ 
+[Original English](articles/GamePhysics.md), [Перевод на русский](articles/GamePhysics_ru.md)
+
 ### Физически корректный шейдинг Диснея. 
 
 _Брент Берли, Студия анимации Уолта Диснея_ 
