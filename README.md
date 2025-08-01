@@ -36,7 +36,7 @@
 
 _Glenn Fiedler_, Цикл Статей
  
-[Original English](articles/GamePhysics.md), [Перевод на русский](articles/GamePhysics_ru.md)
+[Original English](/articles/GamePhysics/GamePhysics.md), [Перевод на русский](/articles/GamePhysics/GamePhysics_ru.md)
 
 ### Физически корректный шейдинг Диснея. 
 
