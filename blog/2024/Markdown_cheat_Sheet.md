@@ -5,6 +5,24 @@ GitHub: Базовый синтаксис записи и форматирова
 
 [docs.github.com/ru/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax](https://docs.github.com/ru/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 
+HTML tables
+---------------------------
+
+```html
+<table> <tbody>
+  <tr>
+    <td><img src='shading1/1.jpg'><p>Картинка 1. OrenNayar</p></td>
+    <td><img src='shading1/2.jpg'><p>Картинка 2. OrenNayar</p></td>
+    <td><img src='shading1/3.jpg'><p>Картинка 3. Lambert</p></td>
+  </tr>
+  <tr>
+    <td><img src='shading1/4.jpg'><p>Картинка 4. Gotanda</p></td>
+    <td><img src='shading1/5.jpg'><p>Картинка 5. Burley</p></td>
+    <td><img src='shading1/6.jpg'><p>Картинка 6. Minaert</p></td>
+  </tr>
+</tbody> </table>
+```
+
 Headers
 ---------------------------
 

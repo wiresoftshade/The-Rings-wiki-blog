@@ -2,6 +2,8 @@
 
 Здесь я описываю процесс разработки. Пытаюсь выразить свое настроение от накопленного опыта. Отсюда дельные вещи и понятия уходят в [wiki](https://github.com/wiresoftshade/The-Rings-wiki-blog/tree/main/wiki).
 
+21 декабря 2025 г. [Сделана финальная модель корабля Hummer](2025/21dec2025_Hummer.md)
+
 31 июля 2025 г. [Перевел статьи из цикла Game Physics от Glenn Fiedler](2025/31jul2025_GamePhysics.md)
 
 29 июля 2025 г. [Решение конфликтов Unreal Blueprints при слиянии веток в SmartGit](2025/29jul2025_GitConflicts.md)
