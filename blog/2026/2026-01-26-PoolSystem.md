@@ -86,7 +86,6 @@ static FTransform CreateTransform
 	return FTransform(Rotation, Location, Scale);
 }
 
-UFUNCTION(BlueprintCallable)
 static TArray<FTransform> CreateTransforms
 (int32 Count, float Width, float Length, float RandomizeUpAxisPosition, float MeshRegularScale, float MeshScaleRandomizeFactor, const FRandomStream& TransformRandom)
 {
