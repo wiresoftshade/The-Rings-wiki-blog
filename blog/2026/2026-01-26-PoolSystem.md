@@ -37,13 +37,13 @@
 
 `BP_GameInstance` создает `UObject` `BP_ActorManager`. Далее создается сцена. Методом спавна разных Blueprint Actors. На ряду с ними создается какое-то количество `BP_Ring`.
 
+**BP_GameInstance > CreateScene**
 ![](images/CreateScene.jpg)
-`BP_GameInstance > CreateScene`
 
 В каждом созданном кольце запускается `SetupRing`. Там нас интересует создание семплов кластеров и настройка пула кольца. `CreateClusterSamples`, `SetupPoolSystem`:
 
+**BP_Ring > SetupRing**
 ![](images/SetupRing.jpg)
-`BP_Ring > SetupRing`
 
 # Создание шаблонов для пул объектов
 
@@ -56,11 +56,11 @@ struct S_Transforms
 
 Создается текстовый ключ и предается в генератор трансформов для HISM:
 
+**BP_Ring > CreateClusterSamples**
 ![](images/CreateClusterSamples.jpg)
-`BP_Ring > CreateClusterSamples`
 
+**BP_GameInstance > StoreHISMDataByKey**
 ![](images/StoreHISMDataByKey.jpg)
-`BP_GameInstance > StoreHISMDataByKey`
 
 Здесь используется функция `static TArray<FTransform> CreateTransforms`. Вот ее код: 
 
@@ -106,26 +106,26 @@ static TArray<FTransform> CreateTransforms
 
 После создания шаблонов происходит настройка пула кольца. Объект кольца это кластер - `BP_Cluster`. У каждого кольца свой пулл. `SetupPoolSystem`:
 
+**BP_Ring > SetupPoolSystem**
 ![](images/SetupPoolSystem.jpg)
-`BP_Ring > SetupPoolSystem`
 
 Кольца создаются и сетапятся по-порядку. На этом пока работа колец останавливается.
 
 Возвращаемся к `BP_GameInstance`. После создания всех экторов сцены `BP_ActorManager`  запускает в экторах эвенты `Start`. Так запускается их работа по общей схеме. 
 
+**BP_GameInstance > CreateScene**
 ![](images/CreateSceneSelStart.jpg)
-`BP_GameInstance > CreateScene`
 
+**BP_ActorManager > Start All Actors Step by Step**
 ![](images/Start%20All%20Actors%20Step%20by%20Step.jpg)
-`BP_ActorManager > Start All Actors Step by Step`
 
 В кольцах эвент `Start` запускается последовательно. Вот так:
 
+**BP_ActorManager > StartRings**
 ![](images/StartRings.jpg)
-`BP_ActorManager > StartRings`
 
+**BP_ActorManager > OnRingPoolReady**
 ![](images/On%20Ring%20Pool%20Ready.jpg)
-`BP_ActorManager > OnRingPoolReady`
 
 Вызов эвента `StartRing` запустит пул кольца.
 
@@ -133,18 +133,18 @@ static TArray<FTransform> CreateTransforms
 
 И вот сам `StartRing` эвент кольца:
 
+**BP_Ring > StartRing**
 ![](images/StartRing.jpg)
-`BP_Ring > StartRing`
 
 Oн запускает `EventTick`:
 
+**BP_Ring > EventTick**
 ![](images/EventTick.jpg)
-`BP_Ring > EventTick`
 
 Каждый `Tick` создается один пул объект. `ConstructSomeToPool`. Так настроен параметр `PoolSpeedPerTick = 1`:
 
+**BP_Ring > ConstructSomeToPool**
 ![](images/ConstructSomeToPool.jpg)
-`BP_Ring > ConstructSomeToPool`
 
 В пуле необходимо хранить по-разному настроенные кластеры для каждого трека. И у каждого трека необходимо запулить несколько одинаковых кластеров. 
 
@@ -152,16 +152,16 @@ Oн запускает `EventTick`:
 
 Поэтому сначала создаются пустые Экторы `BP_Cluster`, столько, сколько позволено `PoolSpeedPerTick`. Далее проверяется нужно ли первому треку еще кластеров. Если не нужно переводим счетчик к следующему треку. Если нужно - сделаем 2 вещи: запись о кластере в словарь согласно треку - `DropToPool`, сетап кластера согласно треку - `SetupRingField`.  
 
+**BP_Ring > DropToPool**
 ![](images/DropToPool.jpg)
-`BP_Ring > DropToPool`
 
 Словарь пула - это структура. Массив треков. Внутри массив кластеров. Кластер это ссылка на эктор и State, нужный для др. системы. `ToPool` это вызов через интерфейс. Методы  сокрытия в пул и вытаскивания из пула очень просты. О них позже.
 
- ![](images/SetupRingField.jpg)
-`BP_Cluster > SetupRingField`
+**BP_Cluster > SetupRingField**
+![](images/SetupRingField.jpg)
 
+**BP_Cluster > ConstructField**
 ![](images/ConstructField.jpg)
-`BP_Cluster > ConstructField`
 
 Здесь создание ключа и по нему получение из словаря трансформов. 
 
@@ -171,8 +171,8 @@ Oн запускает `EventTick`:
 
 Насколько я понимаю они все-таки пулятся. 
 
+**BP_GameInstance > GetHISMDataByKey**
 ![](images/GetHISMDataByKey.jpg)
-`BP_GameInstance > GetHISMDataByKey`
 
 И на этом пул объектов завершается. 
 
@@ -180,15 +180,15 @@ Oн запускает `EventTick`:
 
 Есть система, которая строит сетку кластеров в кольце. Ее задача сказать какой кластер должен быть показан, а какой скрыт. В результате она вызывает либо `GetFromPool`, либо `DropToPool`
 
+**BP_Ring > GetFromPool**
 ![](images/GetFromPool.jpg)
-`BP_Ring > GetFromPool`
 
+**BP_Ring > DropToPool**
 ![](images/DropToPool.jpg)
-`BP_Ring > DropToPool`
 
 По интерфейсу `BPI_Poolable` в `BP_Cluster` вызываются `EventToPool`, `EventFromPool`:
 
+**BP_Cluster > EventToPool, EventFromPool (from Interface)**
 ![](images/EventToPoolEventFromPool.jpg)
-`BP_Cluster > EventToPool, EventFromPool` `(from Interface)`
 
 Кластеры не имеют коллизий, поэтому управления ими нет.
