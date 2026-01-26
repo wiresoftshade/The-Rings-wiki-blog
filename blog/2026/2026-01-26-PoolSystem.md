@@ -157,6 +157,16 @@ Oн запускает `EventTick`:
 
 Словарь пула - это структура. Массив треков. Внутри массив кластеров. Кластер это ссылка на эктор и State, нужный для др. системы. `ToPool` это вызов через интерфейс. Методы  сокрытия в пул и вытаскивания из пула очень просты. О них позже.
 
+```cpp
+struct S_Tracks 
+{   TArray<S_Cluster> Clusters;   }
+struct S_Cluster
+{	
+	UActor ClusterActor; 
+	EState State;	
+}
+```
+
 **BP_Cluster > SetupRingField**
 ![](images/SetupRingField.jpg)
 
