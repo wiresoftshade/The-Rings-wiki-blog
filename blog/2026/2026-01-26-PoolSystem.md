@@ -104,7 +104,7 @@ static TArray<FTransform> CreateTransforms
 
 # Отдельный пул для каждого кольца. Установки пулинга
 
-После создания шаблонов происходит настройка пула кольца. Объект кольца это кластер - `BP_Cluster`. У каждого кольца свой пулл. `SetupPoolSystem`:
+После создания шаблонов происходит настройка пула кольца. Объект пула - это кластер - `BP_Cluster`. У каждого кольца свой пулл. `SetupPoolSystem`:
 
 **BP_Ring > SetupPoolSystem**
 ![](images/SetupPoolSystem.jpg)
