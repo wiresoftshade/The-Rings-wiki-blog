@@ -91,6 +91,8 @@ $\dot{a}\qquad$`\dot{a}`
 
 $\ddot{a}\qquad$`\ddot{a}`
 
+$\hat{a}\qquad$`\hat{a}`
+
 $\vec{a}\qquad$`\vec{a}`
 
 ## 12 Text Style
