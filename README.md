@@ -14,22 +14,6 @@
 
 Сборник некоторых книг и статей на тему рендеринга 3д графики
 
-## Дополнительные материалы
-
-[Главред.](https://glvrd.ru/) Позволяет проверить текст на чистоту и читаемость.
-
-[книга пиши, сокращай.](https://www.alpinabook.ru/catalog/book-81365/) Навык написания текстов.
-
-
-
-[Астраномические символы](wiki/Астраномические-символы.md)
-
-[LATEX Mathematical Symbols](/blog/2024/LaTeXmath_notes.md)
-
-[LATEX Mathematical Symbols *pdf*](/blog/2024/additional/LaTeX_symbols.pdf)
-
-[Markdown cheat Sheet](/blog/2024/Markdown_cheat_Sheet.md)
-
 ## Статьи
 
 ### Game Physics
@@ -57,4 +41,18 @@ _Брент Берли, Студия анимации Уолта Диснея_
 А. Рой
 
 [Выписки из книги](blog/2024/А.Рой-Движение-по-орбитам.md)
+
+## Дополнительные материалы
+
+[Главред.](https://glvrd.ru/) Позволяет проверить текст на чистоту и читаемость.
+
+[книга пиши, сокращай.](https://www.alpinabook.ru/catalog/book-81365/) Навык написания текстов.
+
+[Астраномические символы](wiki/Астраномические-символы.md)
+
+[LATEX Mathematical Symbols](/blog/2024/LaTeXmath_notes.md)
+
+[LATEX Mathematical Symbols *pdf*](/blog/2024/additional/LaTeX_symbols.pdf)
+
+[Markdown cheat Sheet](/blog/2024/Markdown_cheat_Sheet.md)
 
