@@ -1,6 +1,6 @@
-# The Ring wiki
+# The Rings wiki
 
-*wiki/blog of The Ring project*
+*wiki and blog of The Rings project*
 
 ## [Wiki](https://github.com/wiresoftshade/The-Rings-wiki-blog/tree/main/wiki)
 
@@ -8,51 +8,55 @@
 
 ## [Blog](https://github.com/wiresoftshade/The-Rings-wiki-blog/tree/main/blog)
 
-Здесь я описываю процесс разработки. Пытаюсь выразить свое настроение от накопленного опыта. Отсюда дельные вещи и понятия уходят в wiki.
+Здесь я описываю процесс разработки. Пытаюсь выразить свое настроение от накопленного опыта. Отсюда дельные вещи уходят в wiki.
 
-## [Books](https://github.com/wiresoftshade/The-Rings-wiki-blog/tree/main/books)
+## [Статьи и Книги](https://github.com/wiresoftshade/The-Rings-wiki-blog/tree/main/papers)
 
 Сборник некоторых книг и статей на тему рендеринга 3д графики
 
-## Статьи
+### Terrain Rendering using Spherical Clipmaps
+
+*Malte Clasen and Hans-Christian Hege.* [Original English *pdf*](Terrain_Rendering_using_Spherical_Clipmaps.pdf)
+
+---------------------------
 
 ### Game Physics
 
-_Glenn Fiedler_, Цикл Статей
+_Glenn Fiedler._ Цикл Статей
  
-[Original English](/articles/GamePhysics/GamePhysics.md), [Перевод на русский](/articles/GamePhysics/GamePhysics_ru.md)
+- [Original English](/articles/GamePhysics/GamePhysics.md)
+- [Перевод на русский](/articles/GamePhysics/GamePhysics_ru.md)
 
-### Физически корректный шейдинг Диснея. 
+-------------------------------------
 
-_Брент Берли, Студия анимации Уолта Диснея_ 
+### Физически корректный шейдинг Диснея
 
-[Перевод статьи, разбитый по главам](blog/2024/PBS-Disney/README.md) 
+_Брент Берли._ Студия анимации Уолта Диснея 
 
-Для печати: [Текст](/blog/2024/PBS-Disney/Physically-Based-Shading-at-Disney-Print(article-translate).md), [Только картинки](/blog/2024/PBS-Disney/Изображения.md), [Eng *pdf*](/books/s2012_pbs_disney_brdf_notes_v3.pdf)
+- Читать тут: [Перевод статьи, разбитый по главам](blog/2024/PBS-Disney/README.md) 
+- Для печати: [Текст](/blog/2024/PBS-Disney/Physically-Based-Shading-at-Disney-Print(article-translate).md), [Только картинки](/blog/2024/PBS-Disney/Изображения.md), [Original English *pdf*](/books/s2012_pbs_disney_brdf_notes_v3.pdf)
+
+-----------------------------
 
 ### Штриховка в реальном времени
 
-Эмиль Праун, Хьюз Хоппе, Мэтью Уэбб, Адам Финкельштейн
+*Эмиль Праун, Хьюз Хоппе, Мэтью Уэбб, Адам Финкельштейн.* 
+- [Перевод статьи](blog/2024/Real-Time-Hatching-(article-translate).md)
+- [Original English *pdf*](/books/Real%20Time%20Hatching.pdf)
 
-[перевод статьи](blog/2024/Real-Time-Hatching-(article-translate).md), [Eng *pdf*](/books/Real%20Time%20Hatching.pdf)
+----------------
 
 ### Движение по орбитам
 
-А. Рой
+*А. Рой.* [Выписки из книги](blog/2024/А.Рой-Движение-по-орбитам.md)
 
-[Выписки из книги](blog/2024/А.Рой-Движение-по-орбитам.md)
 
 ## Дополнительные материалы
 
-[Главред.](https://glvrd.ru/) Позволяет проверить текст на чистоту и читаемость.
-
-[книга пиши, сокращай.](https://www.alpinabook.ru/catalog/book-81365/) Навык написания текстов.
-
-[Астраномические символы](wiki/Астраномические-символы.md)
-
-[LATEX Mathematical Symbols](/blog/2024/LaTeXmath_notes.md)
-
-[LATEX Mathematical Symbols *pdf*](/blog/2024/additional/LaTeX_symbols.pdf)
-
-[Markdown cheat Sheet](/blog/2024/Markdown_cheat_Sheet.md)
+- [Главред.](https://glvrd.ru/) Позволяет проверить текст на чистоту и читаемость.
+- [книга пиши, сокращай.](https://www.alpinabook.ru/catalog/book-81365/) Навык написания текстов.
+- [Астраномические символы](wiki/Астраномические-символы.md)
+- [LATEX Mathematical Symbols](/blog/2024/LaTeXmath_notes.md)
+- [LATEX Mathematical Symbols *pdf*](/blog/2024/additional/LaTeX_symbols.pdf)
+- [Markdown cheat Sheet](/blog/2024/Markdown_cheat_Sheet.md)
 
