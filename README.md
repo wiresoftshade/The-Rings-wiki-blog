@@ -4,7 +4,7 @@
 
 ## [Wiki](https://github.com/wiresoftshade/The-Rings-wiki-blog/tree/main/wiki)
 
-Чтобы не забыть важные составляющие проекта создал wiki. Начал с [Терминологии проекта](wiki/Терминология.md). Последнее добавление: [Hard and Soft References](HardSoftReferences.md) и [Unreal Engine Threads](Threads.md) Что такое. Как использовать.
+Чтобы не забыть важные составляющие проекта создал wiki. Начал с [Терминологии проекта](wiki/Терминология.md). Последнее добавление: [Hard and Soft References](wiki/HardSoftReferences.md) и [Unreal Engine Threads](wiki/Threads.md) Что такое. Как использовать.
 
 ## [Blog](https://github.com/wiresoftshade/The-Rings-wiki-blog/tree/main/blog)
 
