@@ -8,6 +8,9 @@
 
 [Ring Constructor.](RingConstructor.md) Система построения колец. И их различные уровни детализации
 
+[Hard and Soft References](HardSoftReferences.md) Что такое. Как использовать.
+
+[Unreal Engine Threads](Threads.md) Что такое. Как использовать.
 
 ## Дополнительные материалы
 
