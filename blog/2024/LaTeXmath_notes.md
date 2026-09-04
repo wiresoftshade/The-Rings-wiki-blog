@@ -14,12 +14,12 @@ The more unusual symbols are not defined in base LATEX (NFSS) and require `\usep
 
 ```tex
 $$
-\cos\theta_h=\sqrt{\frac{1}{1-\alpha^2}\bigg(1-\frac{\alpha^2}{(1+(\alpha-1)\xi_2)^2}\bigg)}\qquad(7)
+\cos\theta_h=\sqrt{\frac{1}{1-\alpha^2}\bigg(1-\frac{\alpha^2}{(1+(\alpha-1)\xi_2)^2}\bigg)}\tag{7}
 $$
 ```
 
 $$
-\cos\theta_h=\sqrt{\frac{1}{1-\alpha^2}\bigg(1-\frac{\alpha^2}{(1+(\alpha-1)\xi_2)^2}\bigg)}\qquad(7)
+\cos\theta_h=\sqrt{\frac{1}{1-\alpha^2}\bigg(1-\frac{\alpha^2}{(1+(\alpha-1)\xi_2)^2}\bigg)}\tag{7}
 $$
 
 Это может быть не отрендерено:
@@ -28,7 +28,7 @@ $$
 $$
 \cos\theta_h=\sqrt{\frac{1} %перенос строки
 {1-\alpha^2}\bigg(1-\frac{\alpha^2} %перенос строки
-{(1+(\alpha - 1) \xi_2)^2}\bigg )}\qquad(7) %добавление пробелов
+{(1+(\alpha - 1) \xi_2)^2}\bigg )}\tag{7} %добавление пробелов
     % добавление пустой строки
 $$
 ```
@@ -36,7 +36,7 @@ $$
 $$
 \cos\theta_h=\sqrt{\frac{1} 
 {1-\alpha^2}\bigg(1-\frac{\alpha^2} 
-{(1+(\alpha - 1) \xi_2)^2}\bigg )}\qquad(7) 
+{(1+(\alpha - 1) \xi_2)^2}\bigg )}\tag{7} 
 
 $$
 
@@ -45,7 +45,7 @@ $$
 
 ### Не поддерживаются маленькие пробелы
 
-`\,` `\:` `\;` - должны давать небольшой пробел разной величины по спецификации latex, но он не поддерживается на GitHub. См. пример: $\Gamma(z)\;=\;\int_0^\infty t^{z-1}e^{-t}\,dt\:.$
+`\,` `\:` `\;` - должны давать небольшой пробел разной величины по спецификации latex, но он не поддерживается на GitHub. См. пример: $\Gamma(z)\;=\;\int_0^\infty t^{z-1}e^{-t}\,\mathrm{d}t\:.$
 
 ## 1 GreekandHebrew letters 
 
@@ -95,11 +95,17 @@ $\hat{a}\qquad$`\hat{a}`
 
 $\vec{a}\qquad$`\vec{a}`
 
+$\int x^2\,\mathrm{d}x\qquad$`\int x^2\,\mathrm{d}x`
+
 ## 12 Text Style
 
 Math monospace font: $\mathtt{ABCDEFabcdef123456}\qquad$`\mathtt{ABCDEFabcdef123456}`
 
 Math bold font (use for Vectors): $\mathbf{ABCDEFabcdef123456}\qquad$`\mathbf{ABCDEFabcdef123456}`
+
+Math roman font (use for $\mathrm{d}x$): $\mathrm{ABCDEFabcdef123456}\qquad$`\mathrm{ABCDEFabcdef123456}`
+
+Text font: $\text{ABCDEFabcdef123456}\qquad$`\text{ABCDEFabcdef123456}`
 
 ## 12.1 Text spaces
 
@@ -142,4 +148,12 @@ D_c&=&100
 \end{array} 
 $$
 
+## 14 Нумерация формул
 
+`\tag{7}` Позволяет формулам задавать номер и располагать его справа. Работает в абзаце `$$...$$`.
+
+$$y=2x\tag{7}$$ 
+
+```tex
+$$y=2x\tag{7}$$
+```

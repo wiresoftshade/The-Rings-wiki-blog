@@ -200,11 +200,10 @@ Some text with a footnote.[^1]
 LaTeX math
 ---------------------------
 
-The Gamma function satisfying $\Gamma(n) = (n-1)!\quad\forall
-n\in\mathbb N$ is via the Euler integral
+The Gamma function satisfying $\Gamma(n)=(n-1)!\quad\forall{n}\in\mathbb{N}$ is via the Euler integral
 
 $$
-\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.
+\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}\mathrm{d}t\,.
 $$
 
 [LaTeX math notes](LaTeXmath_notes.md)

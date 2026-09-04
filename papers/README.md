@@ -4,8 +4,8 @@
 
 _Glenn Fiedler._ Цикл Статей
  
-- [Original English](/articles/GamePhysics/GamePhysics.md)
-- [Перевод на русский](/articles/GamePhysics/GamePhysics_ru.md)
+- [Original English](/papers/GamePhysics/GamePhysics.md)
+- [Перевод на русский](/papers/GamePhysics/GamePhysics_ru.md)
 
 
 
@@ -28,16 +28,21 @@ static vertex offset and the variable view position.
 
 _Брент Берли._ Студия анимации Уолта Диснея 
 
-- Читать тут: [Перевод статьи, разбитый по главам](blog/2024/PBS-Disney/README.md) 
-- Для печати: [Текст](/blog/2024/PBS-Disney/Physically-Based-Shading-at-Disney-Print(article-translate).md), [Только картинки](/blog/2024/PBS-Disney/Изображения.md), [Original English *pdf*](/books/s2012_pbs_disney_brdf_notes_v3.pdf)
+- Читать тут: [Перевод статьи, разбитый по главам](/blog/2024/PBS-Disney/README.md) 
+- Для печати: [Текст](/blog/2024/PBS-Disney/Physically-Based-Shading-at-Disney-Print(article-translate).md), [Только картинки](/blog/2024/PBS-Disney/Изображения.md), [Original English *pdf*](/papers/s2012_pbs_disney_brdf_notes_v3.pdf)
 
 ## Штриховка в реальном времени
 
 *Эмиль Праун, Хьюз Хоппе, Мэтью Уэбб, Адам Финкельштейн.* 
-- [Перевод статьи](blog/2024/Real-Time-Hatching-(article-translate).md)
-- [Original English *pdf*](/books/Real%20Time%20Hatching.pdf)
+- [Перевод статьи](/blog/2024/Real-Time-Hatching-(article-translate).md)
+- [Original English *pdf*](/papers/Real%20Time%20Hatching.pdf)
 
 
 ## Движение по орбитам
 
-*А. Рой.* [Выписки из книги](blog/2024/А.Рой-Движение-по-орбитам.md)
+*А. Рой.* 
+
+- [Книга в markdown](/papers/Roi/README.md)
+- [*pdf*](/papers/Roi-Dvizhenie_po_Orbitam.pdf)
+
+[небольшая выписка из книги](/blog/2024/А.Рой-Движение-по-орбитам.md)
