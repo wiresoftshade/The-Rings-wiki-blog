@@ -50,6 +50,7 @@ _Брент Берли._ Студия анимации Уолта Диснея
 
 *А. Рой.* 
 
+- Самая важная глава. [Глава 4. Задача двух тел](/papers/Roi/Глава-4-Задача-двух-тел.md)
 - [Книга в markdown](/papers/Roi/README.md)
 - [*pdf*](/papers/Roi-Dvizhenie_po_Orbitam.pdf)
 
