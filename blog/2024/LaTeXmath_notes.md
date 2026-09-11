@@ -79,6 +79,8 @@ $\longrightarrow\qquad$ `\longrightarrow`
 
 $\infty\qquad$`\infty`
 
+$\partial\qquad$`\partial`
+
 ## 9 Math mode accents
 
 $\acute{a}\qquad$`\acute{a}`
@@ -89,6 +91,8 @@ $\bar{a}\qquad$`\bar{a}`
 
 $\dot{a}\qquad$`\dot{a}`
 
+$\ddot{\ddot{A}}\qquad$`\ddot{\ddot{A}}`
+
 $\ddot{a}\qquad$`\ddot{a}`
 
 $\hat{a}\qquad$`\hat{a}`
@@ -96,6 +100,14 @@ $\hat{a}\qquad$`\hat{a}`
 $\vec{a}\qquad$`\vec{a}`
 
 $\int x^2\,\mathrm{d}x\qquad$`\int x^2\,\mathrm{d}x`
+
+$\approx\qquad$`\approx`
+
+$\neq\qquad$`\neq`
+
+$\simeq\qquad$`\simeq`
+
+
 
 ## 12 Text Style
 
@@ -105,7 +117,7 @@ Math bold font (use for Vectors): $\mathbf{ABCDEFabcdef123456}\qquad$`\mathbf{AB
 
 Math roman font (use for $\mathrm{d}x$): $\mathrm{ABCDEFabcdef123456}\qquad$`\mathrm{ABCDEFabcdef123456}`
 
-Text font: $\text{ABCDEFabcdef123456}\qquad$`\text{ABCDEFabcdef123456}`
+Text mode into Math mode: $\text{ABCDEFabcdef123456}\qquad$`\text{ABCDEFabcdef123456}`
 
 ## 12.1 Text spaces
 
